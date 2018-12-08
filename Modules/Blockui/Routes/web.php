@@ -14,3 +14,4 @@
 Route::prefix('blockui')->group(function() {
     Route::get('/', 'BlockuiController@index');
 });
+
