@@ -51,3 +51,5 @@ packages/
 npm-debug.log
 yarn-error.log
 
+/Modules/Core/node_modules
+/Modules/Blockui/node_modules
