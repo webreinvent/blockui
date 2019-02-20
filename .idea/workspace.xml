@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6982259-e0d9-4a5e-9deb-fcf473bd2c36" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,13 +15,18 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+            <state relative-caret-position="17">
+              <caret line="1" column="7" lean-forward="true" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.travis.yml">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -85,6 +90,7 @@
         <option value="$PROJECT_DIR$/resources/js/components/BuiManageComponent.vue" />
         <option value="$PROJECT_DIR$/Modules/Blockui/Http/Controllers/BlockuiController.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/.travis.yml" />
       </list>
     </option>
   </component>
@@ -247,15 +253,15 @@
     <property name="settings.editor.selected.configurable" value="editing.templates" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\xampp72\htdocs\blockui\Modules\Blockui\Http\Controllers\Frontend" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\xampp72\htdocs\blockui" />
       <recent name="F:\xampp72\htdocs\blockui\resources\js" />
       <recent name="F:\xampp72\htdocs\blockui\resources\js\components" />
       <recent name="F:\xampp72\htdocs\blockui\resources\views\partials" />
       <recent name="F:\xampp72\htdocs\blockui\Modules\Blockui\Resources\views\frontend\pages" />
-      <recent name="F:\xampp72\htdocs\blockui\Modules\Blockui\Http\Controllers" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\xampp72\htdocs\blockui\Modules\Blockui\Http\Controllers\Frontend" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -283,12 +289,21 @@
       <workItem from="1544228619563" duration="6716000" />
       <workItem from="1544268304969" duration="5854000" />
       <workItem from="1544274749378" duration="16073000" />
-      <workItem from="1550681582206" duration="373000" />
+      <workItem from="1550681582206" duration="1920000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29016000" />
+    <option name="totallyTimeSpent" value="30563000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -306,8 +321,8 @@
       <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="11" />
-      <window_info active="true" anchor="right" content_ui="combo" id="Project" order="0" visible="true" weight="0.33963692" />
+      <window_info anchor="bottom" id="TODO" order="11" weight="0.3289256" />
+      <window_info anchor="right" content_ui="combo" id="Project" order="0" visible="true" weight="0.33963692" />
       <window_info anchor="right" id="Structure" order="1" side_tool="true" weight="0.24962178" />
       <window_info anchor="right" id="Terminal" order="2" type="SLIDING" weight="0.5332829" />
       <window_info anchor="right" id="JSON Viewer" order="3" />
@@ -322,8 +337,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Modules/Blockui/Database/Migrations/2018_12_08_113456_create_bui_components_table.php" />
-    <entry file="file://$PROJECT_DIR$/Modules/Blockui/Database/Migrations/2018_12_08_112331_create_bui_tags_table.php" />
     <entry file="file://$PROJECT_DIR$/Modules/Blockui/Database/Migrations/2018_12_08_112323_create_bui_sections_table.php" />
     <entry file="file://$PROJECT_DIR$/Modules/Blockui/Database/Migrations/2018_12_08_112319_create_bui_trends_table.php" />
     <entry file="file://$PROJECT_DIR$/Modules/Blockui/Database/Migrations/2018_12_08_112315_create_bui_themes_table.php" />
@@ -522,12 +535,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/phpunit.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        <state relative-caret-position="187">
+          <caret line="11" column="31" lean-forward="true" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="7" lean-forward="true" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.travis.yml">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>
