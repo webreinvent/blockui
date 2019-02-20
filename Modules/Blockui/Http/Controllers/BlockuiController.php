@@ -5,68 +5,96 @@ namespace Modules\Blockui\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Routing\Controller;
+use Illuminate\Support\Facades\Validator;
+use Modules\Blockui\Entities\BuiFramework;
+use Modules\Blockui\Entities\BuiTheme;
+
 
 class BlockuiController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     * @return Response
-     */
-    public function index()
-    {
-        return view('blockui::frontend.pages.welcome');
-    }
+    public $data;
 
-    /**
-     * Show the form for creating a new resource.
-     * @return Response
-     */
-    public function create()
+    function __construct(Request $request)
     {
-        return view('blockui::create');
+        $this->data = new \stdClass();
+        $this->data->view = "blockui::backend.pages.";
     }
+    //-----------------------------------------------------------------------------
+    public function manage(Request $request)
+    {
 
-    /**
-     * Store a newly created resource in storage.
-     * @param  Request $request
-     * @return Response
-     */
+
+        return view($this->data->view . "manage")
+            ->with("data", $this->data);
+    }
+    //-----------------------------------------------------------------------------
     public function store(Request $request)
     {
-    }
 
-    /**
-     * Show the specified resource.
-     * @return Response
-     */
-    public function show()
-    {
-        return view('blockui::show');
-    }
+        $rules = array(
+            'name' => 'required',
+            'type' => 'required',
+        );
 
-    /**
-     * Show the form for editing the specified resource.
-     * @return Response
-     */
-    public function edit()
-    {
-        return view('blockui::edit');
-    }
+        $validator = \Validator::make( $request->all(), $rules);
+        if ( $validator->fails() ) {
 
-    /**
-     * Update the specified resource in storage.
-     * @param  Request $request
-     * @return Response
-     */
-    public function update(Request $request)
-    {
-    }
+            $errors             = $validator->errors();
+            $response['status'] = 'failed';
+            $response['errors'] = $errors;
+            return response()->json($response);
+        }
 
-    /**
-     * Remove the specified resource from storage.
-     * @return Response
-     */
-    public function destroy()
-    {
+
+        switch ($request->type)
+        {
+            case 'Framework':
+
+                $item = BuiFramework::where('slug', str_slug($request->name))->first();
+                if(!$item)
+                {
+                    $item = new BuiFramework();
+                }
+                break;
+
+            //---------------------
+            case 'Theme':
+                $item = BuiTheme::where('slug', str_slug($request->name))->first();
+                if(!$item)
+                {
+                    $item = new BuiTheme();
+                }
+                break;
+            //---------------------
+            //---------------------
+            //---------------------
+
+        }
+
+        $data = [];
+
+        if($item)
+        {
+            $item->fill($request->all());
+            $item->slug = str_slug($request->name);
+            $item->save();
+
+            $data['item'] = $item;
+        }
+
+
+
+        $response['status'] = 'success';
+        $response['messages'][] = 'Saved';
+        $response['data'] = $data;
+
+        return response()->json($response);
+
     }
+    //-----------------------------------------------------------------------------
+    //-----------------------------------------------------------------------------
+    //-----------------------------------------------------------------------------
+    //-----------------------------------------------------------------------------
+    //-----------------------------------------------------------------------------
+
 }

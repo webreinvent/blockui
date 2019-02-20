@@ -11,7 +11,22 @@
 |
 */
 
-Route::prefix('blockui')->group(function() {
-    Route::get('/', 'BlockuiController@index');
-});
+Route::group(
+    [
+        'middleware' => [ 'auth' ],
+        'prefix'     => '/backend/blockui/',
+    ],
+    function () {
+        //------------------------------------------------
+        //------------------------------------------------
+
+        //------------------------------------------------
+        Route::get( 'manage', 'BlockuiController@manage' )
+            ->name( 'b.bui.manage' );
+        //------------------------------------------------
+        Route::any( 'manage/store', 'BlockuiController@store' )
+            ->name( 'b.bui.manage.store' );
+        //------------------------------------------------
+        //------------------------------------------------
+    });
 

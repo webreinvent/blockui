@@ -13,13 +13,13 @@
 
 Route::group(
     [
-        'middleware' => [ ],
+        'middleware' => [ 'auth' ],
         'prefix'     => '/',
     ],
     function () {
         //------------------------------------------------
         //------------------------------------------------
-        Route::get( '/block/create', 'Frontend\PublicController@blockCreate' )
+        Route::get( 'block/create', 'Frontend\PublicController@blockCreate' )
             ->name( 'bui.block.create' );
         //------------------------------------------------
         //------------------------------------------------

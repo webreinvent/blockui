@@ -1,5 +1,13 @@
-@extends("blockui::frontend.layouts.public")
+@extends("layouts.app")
 
+@section('head')
+
+@endsection
+
+
+@section('footer_scripts')
+
+@endsection
 
 @section('content')
 
@@ -7,8 +15,9 @@
 
         <div class="col-12">
 
-            <h1>Block UI</h1>
-            <p>Modular & BED UI Components/Block Snippets</p>
+
+
+
 
         </div>
 
@@ -17,4 +26,4 @@
 
 
 
-    @endsection
+@endsection
