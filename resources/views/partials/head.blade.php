@@ -15,4 +15,4 @@
 <!-- Styles -->
 <link href="/public/vendor/nprogress/nprogress.css" rel="stylesheet">
 <link href="/public/vendor/alertify/alertify.css" rel="stylesheet">
-<link href="{{ mix('public/css/app.css') }}" rel="stylesheet">
+<link href="/public{{ mix('css/app.css') }}" rel="stylesheet">
