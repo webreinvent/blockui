@@ -1,2 +1,11 @@
-after_success:
-  "curl -T index.html -u $FTP_USER:$FTP_PASSWORD ftp://blockui.io/public_html/"
+install:
+  - 'git clone https://github.com/git-ftp/git-ftp.git'
+  - 'cd git-ftp'
+  - 'git checkout 1.1.0'
+  - 'sudo make install'
+
+script:
+  - 'git clone https://github.com/compwj/travis-ci-deploy-ftp.git'
+  - 'dir'
+  - 'cd travis-ci-deploy-ftp'
+  - 'git ftp push --user $FTP_USER --passwd $FTP_PASSWORD ftp://alpha.webreinvent.com/public_html'
