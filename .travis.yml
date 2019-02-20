@@ -6,5 +6,5 @@ install:
 
 script:
   #- 'git ftp init -D -vv --disable-epsv -s --user $FTP_USER --passwd $FTP_PASSWORD "ftp://blockui.io/public_html"'
-  - 'git ftp catchup -D -vv --disable-epsv -s --user $FTP_USER --passwd $FTP_PASSWORD "ftp://blockui.io/public_html"'
-  #- 'git ftp push -D -vv --disable-epsv -s --user $FTP_USER --passwd $FTP_PASSWORD "ftp://blockui.io/public_html"'
+  #- 'git ftp catchup -D -vv --disable-epsv -s --user $FTP_USER --passwd $FTP_PASSWORD "ftp://blockui.io/public_html"'
+  - 'git ftp push -D -vv --disable-epsv -s --user $FTP_USER --passwd $FTP_PASSWORD "ftp://blockui.io/public_html"'
