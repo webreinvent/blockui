@@ -5,9 +5,9 @@
 /vendor
 .env
 .phpunit.result.cache
-Homestead.json
+/Homestead.json
 *.lock
-package-lock.json
-Homestead.yaml
-npm-debug.log
-yarn-error.log
+/Homestead.yaml
+/npm-debug.log
+/yarn-error.log
+/package-lock.json
