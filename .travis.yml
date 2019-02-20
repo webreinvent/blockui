@@ -5,4 +5,4 @@ install:
   - 'sudo make install'
 
 script:
-  - 'git ftp init -v --disable-epsv -s --user $FTP_USER --passwd $FTP_PASSWORD "ftp://blockui.io/public_html"'
+  - 'git ftp init -D -vv --disable-epsv -s --user $FTP_USER --passwd $FTP_PASSWORD "ftp://blockui.io/public_html"'

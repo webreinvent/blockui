@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d6982259-e0d9-4a5e-9deb-fcf473bd2c36" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
-    </list>
+    <list default="true" id="d6982259-e0d9-4a5e-9deb-fcf473bd2c36" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -293,12 +291,12 @@
       <workItem from="1544228619563" duration="6716000" />
       <workItem from="1544268304969" duration="5854000" />
       <workItem from="1544274749378" duration="16073000" />
-      <workItem from="1550681582206" duration="4163000" />
+      <workItem from="1550681582206" duration="4577000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32806000" />
+    <option name="totallyTimeSpent" value="33220000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -310,7 +308,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
