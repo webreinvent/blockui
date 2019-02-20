@@ -5,7 +5,4 @@ install:
   - 'sudo make install'
 
 script:
-  - 'git config git-ftp.url "ftp://blockui.io/public_html"'
-  - 'git config git-ftp.user $FTP_USER'
-  - 'git config git-ftp.password $FTP_PASSWORD'
-  - 'git ftp init'
+  - 'git ftp init --user $FTP_USER --passwd $FTP_PASSWORD "ftp://blockui.io/public_html"'
