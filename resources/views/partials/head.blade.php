@@ -13,6 +13,6 @@
 <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
 
 <!-- Styles -->
-<link href="/vendor/nprogress/nprogress.css" rel="stylesheet">
-<link href="/vendor/alertify/alertify.css" rel="stylesheet">
-<link href="{{ mix('css/app.css') }}" rel="stylesheet">
+<link href="/public/vendor/nprogress/nprogress.css" rel="stylesheet">
+<link href="/public/vendor/alertify/alertify.css" rel="stylesheet">
+<link href="{{ mix('public/css/app.css') }}" rel="stylesheet">

@@ -23,9 +23,9 @@
 
 
     <!-- Scripts -->
-    <script src="/vendor/nprogress/nprogress.js" defer></script>
-    <script src="/vendor/alertify/alertify.js" defer></script>
-    <script src="{{ mix('js/app.js') }}" defer></script>
+    <script src="/public/vendor/nprogress/nprogress.js" defer></script>
+    <script src="/public/vendor/alertify/alertify.js" defer></script>
+    <script src="{{ mix('public/js/app.js') }}" defer></script>
 
 
     <!--page specific scripts-->
