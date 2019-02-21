@@ -12,7 +12,7 @@ class RouteServiceProvider extends ServiceProvider
      *
      * @var string
      */
-    protected $namespace = 'Modules\Core\Http\Controllers';
+    protected $namespace = '';
 
     /**
      * Called before routes are registered.
@@ -33,9 +33,14 @@ class RouteServiceProvider extends ServiceProvider
      */
     public function map()
     {
+
+
         $this->mapApiRoutes();
 
         $this->mapWebRoutes();
+
+        $this->mapFrontendRoutes();
+
     }
 
     /**
@@ -66,4 +71,60 @@ class RouteServiceProvider extends ServiceProvider
             ->namespace($this->namespace)
             ->group(__DIR__ . '/../Routes/api.php');
     }
+
+    /**
+     * Define the "api" routes for the application.
+     *
+     * These routes are typically stateless.
+     *
+     * @return void
+     */
+    protected function mapFrontendRoutes()
+    {
+
+
+
+        $base_url = \URL::to("/");
+
+        if(isset($_SERVER['HTTP_HOST']))
+        {
+            $host = $_SERVER['HTTP_HOST'];
+        }
+
+        $ip_arr = [];
+        $ip = null;
+
+        if(isset($_SERVER['REMOTE_ADDR']))
+        {
+            $ip = $_SERVER['REMOTE_ADDR'];
+        }
+
+
+
+
+        $frontend_routes_path = null;
+
+
+        //------------load on localhost
+        if(!isset($host) || $host == 'localhost' )
+        {
+            $frontend_routes_path = __DIR__ . '/../../Blockui/Routes/frontend.php';
+
+        }
+
+        //------------load assignable
+        if( isset($host) && $host == 'blockui.io'
+        )
+        {
+            $frontend_routes_path = __DIR__ . '/../../Blockui/Routes/frontend.php';
+
+        }
+
+
+
+        Route::middleware('web')
+            ->group($frontend_routes_path);
+    }
+
+
 }

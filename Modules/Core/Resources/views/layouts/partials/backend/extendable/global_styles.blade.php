@@ -1,0 +1,1 @@
+{{ loadExtendableView("global_styles") }}

@@ -2,9 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6982259-e0d9-4a5e-9deb-fcf473bd2c36" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/Modules/Blockui/Resources/views/frontend/pages/welcome.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Modules/Blockui/Http/Controllers/Frontend/PublicController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Blockui/Http/Controllers/Frontend/PublicController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Blockui/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Blockui/Providers/RouteServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Blockui/Routes/frontend.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Blockui/Routes/frontend.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Core/Config/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Core/Config/config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Core/Database/Seeders/CoreDatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Core/Database/Seeders/CoreDatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Core/Http/Controllers/CoreController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Core/Http/Controllers/CoreController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Core/Providers/CoreServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Core/Providers/CoreServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Core/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Core/Providers/RouteServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Core/Resources/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Core/Resources/views/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Core/Resources/views/layouts/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Core/Resources/views/layouts/master.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Core/Routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Core/Routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Core/Routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Core/Routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Core/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Core/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Core/module.json" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Core/module.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Core/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Core/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Core/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Core/webpack.mix.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
@@ -22,39 +37,47 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Modules/Blockui/Routes/frontend.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="21" column="62" selection-start-line="21" selection-start-column="46" selection-end-line="21" selection-end-column="62" />
+            <state relative-caret-position="102">
+              <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/web.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
+        <entry file="file://$PROJECT_DIR$/Modules/Blockui/Http/Controllers/Frontend/PublicController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="423">
-              <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
+            <state relative-caret-position="153">
+              <caret line="15" column="53" selection-start-line="15" selection-start-column="53" selection-end-line="15" selection-end-column="53" />
               <folding>
-                <element signature="e#40#68#0#PHP" expanded="true" />
+                <element signature="e#61#89#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Modules/Blockui/Providers/BlockuiServiceProvider.php">
+        <entry file="file://$PROJECT_DIR$/Modules/Blockui/Resources/views/frontend/pages/block-create.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1377" />
+            <state relative-caret-position="306">
+              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+            </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Modules/Blockui/Libraries/Extractor.php">
+        <entry file="file://$PROJECT_DIR$/Modules/Blockui/Resources/views/frontend/pages/welcome.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-              <folding>
-                <element signature="n#style#0;n#td#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="238">
+              <caret line="14" column="18" lean-forward="true" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -99,15 +122,12 @@
         <option value="$PROJECT_DIR$/Modules/Blockui/Resources/views/frontend/layouts/public.blade.php" />
         <option value="$PROJECT_DIR$/Modules/Blockui/Resources/views/frontend/partials/errors.blade.php" />
         <option value="$PROJECT_DIR$/Modules/Blockui/Resources/views/frontend/partials/nav.blade.php" />
-        <option value="$PROJECT_DIR$/Modules/Blockui/Providers/RouteServiceProvider.php" />
         <option value="$PROJECT_DIR$/Modules/Blockui/Resources/views/frontend/pages/block-create.blade.php" />
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/Modules/Blockui/Resources/assets/js/app.js" />
-        <option value="$PROJECT_DIR$/Modules/Blockui/Resources/views/frontend/pages/welcome.blade.php" />
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/resources/views/partials/nav.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/welcome.blade.php" />
-        <option value="$PROJECT_DIR$/Modules/Blockui/Routes/frontend.php" />
         <option value="$PROJECT_DIR$/Modules/Blockui/Resources/views/backend/pages/manage.blade.php" />
         <option value="$PROJECT_DIR$/Modules/Blockui/Routes/web.php" />
         <option value="$PROJECT_DIR$/resources/js/VueHelper.js" />
@@ -121,11 +141,15 @@
         <option value="$PROJECT_DIR$/resources/views/partials/head.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/app.blade.php" />
         <option value="$PROJECT_DIR$/.travis.yml" />
-        <option value="$PROJECT_DIR$/routes/web.php" />
-        <option value="$PROJECT_DIR$/Modules/Blockui/Http/Controllers/Frontend/PublicController.php" />
         <option value="$PROJECT_DIR$/Modules/Blockui/Library/Extractor.php" />
         <option value="$PROJECT_DIR$/Modules/Blockui/Libraries/Extractor.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" />
+        <option value="$PROJECT_DIR$/Modules/Core/Providers/RouteServiceProvider.php" />
+        <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/Modules/Blockui/Resources/views/frontend/pages/welcome.blade.php" />
+        <option value="$PROJECT_DIR$/Modules/Blockui/Providers/RouteServiceProvider.php" />
+        <option value="$PROJECT_DIR$/Modules/Blockui/Routes/frontend.php" />
+        <option value="$PROJECT_DIR$/Modules/Blockui/Http/Controllers/Frontend/PublicController.php" />
       </list>
     </option>
   </component>
@@ -276,11 +300,6 @@
             <path>
               <item name="blockui" type="b2602c69:ProjectViewProjectNode" />
               <item name="blockui" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blockui" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blockui" type="462c0819:PsiDirectoryNode" />
               <item name="Modules" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -294,19 +313,39 @@
               <item name="blockui" type="462c0819:PsiDirectoryNode" />
               <item name="Modules" type="462c0819:PsiDirectoryNode" />
               <item name="Blockui" type="462c0819:PsiDirectoryNode" />
-              <item name="Libraries" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="blockui" type="b2602c69:ProjectViewProjectNode" />
               <item name="blockui" type="462c0819:PsiDirectoryNode" />
               <item name="Modules" type="462c0819:PsiDirectoryNode" />
               <item name="Blockui" type="462c0819:PsiDirectoryNode" />
-              <item name="Providers" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="blockui" type="b2602c69:ProjectViewProjectNode" />
               <item name="blockui" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="Modules" type="462c0819:PsiDirectoryNode" />
+              <item name="Blockui" type="462c0819:PsiDirectoryNode" />
+              <item name="Resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blockui" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blockui" type="462c0819:PsiDirectoryNode" />
+              <item name="Modules" type="462c0819:PsiDirectoryNode" />
+              <item name="Blockui" type="462c0819:PsiDirectoryNode" />
+              <item name="Resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blockui" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blockui" type="462c0819:PsiDirectoryNode" />
+              <item name="Modules" type="462c0819:PsiDirectoryNode" />
+              <item name="Blockui" type="462c0819:PsiDirectoryNode" />
+              <item name="Resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="blockui" type="b2602c69:ProjectViewProjectNode" />
@@ -328,15 +367,15 @@
     <property name="settings.editor.selected.configurable" value="editing.templates" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\xampp72\htdocs\blockui\Modules\Blockui\Http\Controllers\Frontend" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\xampp72\htdocs\blockui\Modules\Blockui\Resources\views\frontend\pages" />
       <recent name="F:\xampp72\htdocs\blockui" />
       <recent name="F:\xampp72\htdocs\blockui\resources\js" />
       <recent name="F:\xampp72\htdocs\blockui\resources\js\components" />
       <recent name="F:\xampp72\htdocs\blockui\resources\views\partials" />
-      <recent name="F:\xampp72\htdocs\blockui\Modules\Blockui\Resources\views\frontend\pages" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\xampp72\htdocs\blockui\Modules\Blockui\Http\Controllers\Frontend" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -365,12 +404,12 @@
       <workItem from="1544268304969" duration="5854000" />
       <workItem from="1544274749378" duration="16073000" />
       <workItem from="1550681582206" duration="11625000" />
-      <workItem from="1550777671251" duration="3270000" />
+      <workItem from="1550777671251" duration="3921000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43538000" />
+    <option name="totallyTimeSpent" value="44189000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -399,7 +438,7 @@
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="11" weight="0.3289256" />
       <window_info anchor="bottom" id="File Transfer" order="12" weight="0.3289256" />
-      <window_info anchor="right" content_ui="combo" id="Project" order="0" weight="0.34493193" />
+      <window_info active="true" anchor="right" content_ui="combo" id="Project" order="0" visible="true" weight="0.34493193" />
       <window_info anchor="right" id="Structure" order="1" side_tool="true" weight="0.24962178" />
       <window_info anchor="right" id="Terminal" order="2" type="SLIDING" weight="0.5332829" />
       <window_info anchor="right" id="JSON Viewer" order="3" />
@@ -414,7 +453,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Modules/Blockui/Entities/BuiBlock.php" />
     <entry file="file://$PROJECT_DIR$/Modules/Blockui/Entities/BuiTrend.php" />
     <entry file="file://$PROJECT_DIR$/Modules/Blockui/Entities/BuiTheme.php" />
     <entry file="file://$PROJECT_DIR$/Modules/Blockui/Entities/BuiTag.php" />
@@ -430,7 +468,6 @@
     <entry file="file://$PROJECT_DIR$/resources/views/partials/form-status.blade.php" />
     <entry file="file://$PROJECT_DIR$/Modules/Blockui/Resources/views/frontend/layouts/public.blade.php" />
     <entry file="file://$PROJECT_DIR$/Modules/Blockui/Resources/views/frontend/partials/nav.blade.php" />
-    <entry file="file://$PROJECT_DIR$/Modules/Blockui/Providers/RouteServiceProvider.php" />
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/ActivateController.php" />
     <entry file="file://$PROJECT_DIR$/Modules/Blockui/Resources/views/frontend/partials/errors.blade.php" />
     <entry file="file://$PROJECT_DIR$/resources/assets/js/app.js" />
@@ -441,7 +478,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Modules/Blockui/Resources/views/frontend/pages/welcome.blade.php" />
     <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
@@ -572,37 +608,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Modules/Blockui/Resources/views/frontend/pages/block-create.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="19" selection-start-column="19" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Modules/Core/Http/Controllers/CoreController.php">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/welcome.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="62" selection-start-line="7" selection-start-column="62" selection-end-line="7" selection-end-column="62" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/partials/nav.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="20" column="86" selection-start-line="20" selection-start-column="86" selection-end-line="20" selection-end-column="86" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Modules/Core/Providers/RouteServiceProvider.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Modules/Blockui/Routes/frontend.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="21" column="62" selection-start-line="21" selection-start-column="46" selection-end-line="21" selection-end-column="62" />
         </state>
       </provider>
     </entry>
@@ -613,24 +625,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Modules/Blockui/Http/Controllers/Frontend/PublicController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="27" column="8" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Modules/Core/Routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="14" column="35" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
@@ -651,27 +649,93 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/Core/Providers/CoreServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5">
+          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+          <folding>
+            <element signature="e#40#68#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Modules/Blockui/Providers/BlockuiServiceProvider.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1377" />
+        <state relative-caret-position="-1447" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Modules/Blockui/Libraries/Extractor.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
           <folding>
             <element signature="n#style#0;n#td#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/welcome.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
+        <state>
+          <caret selection-end-line="17" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/Blockui/Resources/views/frontend/pages/welcome.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="18" lean-forward="true" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/Blockui/Resources/views/frontend/pages/block-create.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/Blockui/Providers/RouteServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="51" column="52" selection-start-line="51" selection-start-column="52" selection-end-line="51" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/Core/Providers/RouteServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="118" column="74" lean-forward="true" selection-start-line="118" selection-start-column="74" selection-end-line="118" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/Blockui/Routes/frontend.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/Blockui/Http/Controllers/Frontend/PublicController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="15" column="53" selection-start-line="15" selection-start-column="53" selection-end-line="15" selection-end-column="53" />
           <folding>
-            <element signature="e#40#68#0#PHP" expanded="true" />
+            <element signature="e#61#89#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>

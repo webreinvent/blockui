@@ -8,7 +8,19 @@
     "providers": [
         "Modules\\Core\\Providers\\CoreServiceProvider"
     ],
-    "aliases": {},
-    "files": [],
-    "requires": []
+    "aliases": [],
+    "version": "5.0",
+    "version_release": "2017-07-02",
+    "settings": {
+        "records_per_page": 25,
+        "allowed_ip": [
+            "103.196.221.15",
+            "122.162.19.38",
+            "103.196.221.19"
+        ]
+    },
+    "allowed_ip": [
+        "103.196.221.15",
+        "103.196.221.19"
+    ]
 }

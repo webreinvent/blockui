@@ -1,0 +1,1 @@
+{{ loadExtendableView("profile_left") }}

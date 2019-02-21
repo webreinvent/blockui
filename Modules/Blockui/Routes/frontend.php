@@ -13,13 +13,16 @@
 
 Route::group(
     [
-        'middleware' => [ 'auth' ],
+        'middleware' => [ 'web' ],
         'prefix'     => '/',
+        'namespace'  => 'Modules\Blockui\Http\Controllers\Frontend'
     ],
     function () {
         //------------------------------------------------
+        Route::get( '/', 'PublicController@index' )
+            ->name( 'bui.welcome' );
         //------------------------------------------------
-        Route::get( 'block/create', 'Frontend\PublicController@blockCreate' )
+        Route::get( 'block/create', 'PublicController@blockCreate' )
             ->name( 'bui.block.create' );
         //------------------------------------------------
         //------------------------------------------------

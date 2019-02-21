@@ -21,6 +21,8 @@ class CoreServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+
+
         $this->registerTranslations();
         $this->registerConfig();
         $this->registerViews();
@@ -36,6 +38,15 @@ class CoreServiceProvider extends ServiceProvider
     public function register()
     {
         $this->app->register(RouteServiceProvider::class);
+
+        $this->app->alias('bugsnag.logger', \Illuminate\Contracts\Logging\Log::class);
+        $this->app->alias('bugsnag.logger', \Psr\Log\LoggerInterface::class);
+        $loader = \Illuminate\Foundation\AliasLoader::getInstance();
+        $loader->alias('CoreHelper', 'Modules\Core\Libraries\CoreHelper');
+        $loader->alias('CorePushCrew', 'Modules\Core\Libraries\CorePushCrew');
+        $loader->alias('CoreImapHelper', 'Modules\Core\Libraries\CoreImapHelper');
+        $loader->alias('CarbonHelper', 'Modules\Core\Libraries\CarbonHelper');
+
     }
 
     /**
@@ -91,7 +102,7 @@ class CoreServiceProvider extends ServiceProvider
 
     /**
      * Register an additional directory of factories.
-     * 
+     *
      * @return void
      */
     public function registerFactories()

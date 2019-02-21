@@ -50,10 +50,6 @@ class RouteServiceProvider extends ServiceProvider
         Route::middleware('web')
             ->namespace($this->namespace)
             ->group(__DIR__ . '/../Routes/web.php');
-
-        Route::middleware('web')
-            ->namespace($this->namespace)
-            ->group(__DIR__ . '/../Routes/frontend.php');
     }
 
     /**
