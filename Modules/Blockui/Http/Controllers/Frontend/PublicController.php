@@ -30,6 +30,7 @@ class PublicController extends Controller
     {
         $list = \Storage::directories('/public/blocks/');
 
+
         $response['status'] = 'success';
         $response['data'] = $list;
 

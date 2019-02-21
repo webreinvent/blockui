@@ -1,8 +1,8 @@
 <template>
 
     <ul>
-        <li>
-            Test
+        <li v-if="blocks.length" v-for="item in blocks">
+            {{item}}
         </li>
     </ul>
 
@@ -13,7 +13,7 @@
 
         data()
         {
-            return {
+            let obj = {
 
                 urls:{
                     current: window.location.href
@@ -23,14 +23,16 @@
                         'Framework',
                         'Theme',
                     ],
-                    blocks: []
-                },
 
-            }
+                },
+                blocks: {}
+            };
+
+            return obj;
         },
 
         mounted() {
-            console.log('Component mounted.')
+            this.getBlocks();
         },
 
         methods: {
@@ -51,14 +53,16 @@
                     e.preventDefault();
                 }
 
-                var url = this.urls.current+"/blocks/list";
+                var url = this.urls.current+"blocks/list";
                 var params = {};
                 this.$helpers.ajax(url, params, this.storeItemAfter);
             },
             //---------------------------------------------------------------------
             storeItemAfter: function (data) {
 
-                console.log('data', data);
+                console.log('blocks list', data);
+
+                this.blocks = data;
 
                 this.afterRendering();
             },

@@ -11,14 +11,13 @@ Vue.http.headers.common['X-CSRF-TOKEN'] = document.querySelector('meta[name=csrf
 
 Vue.config.async = false;
 
-
 import VueHelpers from './VueHelpers';
 
 Vue.use(VueHelpers);
 
-Vue.component('example-component', require('./components/ExampleComponent.vue'));
+
 Vue.component('bui-nav', require('./components/BuiNavComponent.vue'));
-Vue.component('bui-manage', require('./components/BuiManageComponent.vue'));
+
 
 const app = new Vue({
     el: '#app'

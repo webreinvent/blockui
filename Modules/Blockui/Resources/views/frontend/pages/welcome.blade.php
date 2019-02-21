@@ -12,13 +12,9 @@
 
 
 
-            <div class="col-md-12">
+            <div class="col-md-9">
                 <h1>BlockUI</h1>
                 <p>Modular & BEM based UI Component Blocks</p>
-
-
-                <example-component></example-component>
-                <bui-manage></bui-manage>
 
 
 

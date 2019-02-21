@@ -22,7 +22,7 @@ Route::group(
         Route::get( '/', 'PublicController@index' )
             ->name( 'bui.welcome' );
         //------------------------------------------------
-        Route::get( '/blocks/list', 'PublicController@getBlocks' )
+        Route::any( 'blocks/list', 'PublicController@getBlocks' )
             ->name( 'bui.block.list' );
         //------------------------------------------------
         //------------------------------------------------
