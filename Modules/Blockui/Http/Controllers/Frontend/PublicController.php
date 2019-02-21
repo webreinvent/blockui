@@ -26,6 +26,17 @@ class PublicController extends Controller
     }
 
     //-----------------------------------------------------------------------------
+    public function getBlocks(Request $request)
+    {
+        $list = \Storage::directories('/public/blocks/');
+
+        $response['status'] = 'success';
+        $response['data'] = $list;
+
+        return response()->json($response);
+
+    }
+    //-----------------------------------------------------------------------------
     public function blockCreate(Request $request)
     {
 

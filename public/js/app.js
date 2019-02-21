@@ -1813,6 +1813,82 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js?{\"cacheDirectory\":true,\"presets\":[[\"env\",{\"modules\":false,\"targets\":{\"browsers\":[\"> 2%\"],\"uglify\":true}}]],\"plugins\":[\"transform-object-rest-spread\",[\"transform-runtime\",{\"polyfill\":false,\"helpers\":false}]]}!./node_modules/vue-loader/lib/selector.js?type=script&index=0!./resources/js/components/BuiNavComponent.vue":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    data: function data() {
+        return {
+
+            urls: {
+                current: window.location.href
+            },
+            assets: {
+                list: ['Framework', 'Theme'],
+                blocks: []
+            }
+
+        };
+    },
+    mounted: function mounted() {
+        console.log('Component mounted.');
+    },
+
+
+    methods: {
+        //------------------------------------------------------------
+
+        //------------------------------------------------------------
+        showAddModal: function showAddModal(e) {
+            if (e) {
+                e.preventDefault();
+            }
+            $("#ModalAdd").modal('show');
+        },
+        //------------------------------------------------------------
+        getBlocks: function getBlocks(e) {
+            if (e) {
+                e.preventDefault();
+            }
+
+            var url = this.urls.current + "/blocks/list";
+            var params = {};
+            this.$helpers.ajax(url, params, this.storeItemAfter);
+        },
+        //---------------------------------------------------------------------
+        storeItemAfter: function storeItemAfter(data) {
+
+            console.log('data', data);
+
+            this.afterRendering();
+        },
+        //------------------------------------------------------------
+        afterRendering: function afterRendering() {
+            this.$nextTick(function () {
+                this.$helpers.stopNprogress();
+            });
+        }
+        //------------------------------------------------------------
+        //------------------------------------------------------------
+    }
+
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js?{\"cacheDirectory\":true,\"presets\":[[\"env\",{\"modules\":false,\"targets\":{\"browsers\":[\"> 2%\"],\"uglify\":true}}]],\"plugins\":[\"transform-object-rest-spread\",[\"transform-runtime\",{\"polyfill\":false,\"helpers\":false}]]}!./node_modules/vue-loader/lib/selector.js?type=script&index=0!./resources/js/components/ExampleComponent.vue":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -36722,6 +36798,34 @@ if (false) {
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/template-compiler/index.js?{\"id\":\"data-v-61a99dd6\",\"hasScoped\":false,\"buble\":{\"transforms\":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/js/components/BuiNavComponent.vue":
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("ul", [_c("li", [_vm._v("\n            Test\n        ")])])
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-61a99dd6", module.exports)
+  }
+}
+
+/***/ }),
+
 /***/ "./node_modules/vue-resource/dist/vue-resource.esm.js":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -49571,6 +49675,7 @@ Vue.config.async = false;
 Vue.use(__WEBPACK_IMPORTED_MODULE_1__VueHelpers__["a" /* default */]);
 
 Vue.component('example-component', __webpack_require__("./resources/js/components/ExampleComponent.vue"));
+Vue.component('bui-nav', __webpack_require__("./resources/js/components/BuiNavComponent.vue"));
 Vue.component('bui-manage', __webpack_require__("./resources/js/components/BuiManageComponent.vue"));
 
 var app = new Vue({
@@ -49678,6 +49783,54 @@ if (false) {(function () {
     hotAPI.createRecord("data-v-237cd86d", Component.options)
   } else {
     hotAPI.reload("data-v-237cd86d", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+
+/***/ "./resources/js/components/BuiNavComponent.vue":
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__("./node_modules/vue-loader/lib/component-normalizer.js")
+/* script */
+var __vue_script__ = __webpack_require__("./node_modules/babel-loader/lib/index.js?{\"cacheDirectory\":true,\"presets\":[[\"env\",{\"modules\":false,\"targets\":{\"browsers\":[\"> 2%\"],\"uglify\":true}}]],\"plugins\":[\"transform-object-rest-spread\",[\"transform-runtime\",{\"polyfill\":false,\"helpers\":false}]]}!./node_modules/vue-loader/lib/selector.js?type=script&index=0!./resources/js/components/BuiNavComponent.vue")
+/* template */
+var __vue_template__ = __webpack_require__("./node_modules/vue-loader/lib/template-compiler/index.js?{\"id\":\"data-v-61a99dd6\",\"hasScoped\":false,\"buble\":{\"transforms\":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/js/components/BuiNavComponent.vue")
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/js/components/BuiNavComponent.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-61a99dd6", Component.options)
+  } else {
+    hotAPI.reload("data-v-61a99dd6", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true

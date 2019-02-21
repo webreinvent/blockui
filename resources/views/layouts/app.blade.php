@@ -21,11 +21,10 @@
     </div>
 
 
-
     <!-- Scripts -->
-    <script src="/public/vendor/nprogress/nprogress.js" defer></script>
-    <script src="/public/vendor/alertify/alertify.js" defer></script>
-    <script src="/public{{ mix('js/app.js') }}" defer></script>
+    <script src="{{url("/")}}/public/vendor/nprogress/nprogress.js" defer></script>
+    <script src="{{url("/")}}/public/vendor/alertify/alertify.js" defer></script>
+    <script src="{{url("/")}}/public{{ mix('js/app.js') }}" defer></script>
 
 
     <!--page specific scripts-->
