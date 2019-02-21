@@ -26,6 +26,7 @@ class PublicController extends Controller
     {
 
 
+
         return view($this->data->view . "pages.block-create")
             ->with("data", $this->data);
     }
