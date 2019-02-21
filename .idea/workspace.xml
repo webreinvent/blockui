@@ -2,26 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6982259-e0d9-4a5e-9deb-fcf473bd2c36" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/Modules/Blockui/Resources/views/frontend/pages/welcome.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Blockui/Http/Controllers/Frontend/PublicController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Blockui/Http/Controllers/Frontend/PublicController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Blockui/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Blockui/Providers/RouteServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Blockui/Routes/frontend.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Blockui/Routes/frontend.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Core/Config/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Core/Config/config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Core/Database/Seeders/CoreDatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Core/Database/Seeders/CoreDatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Core/Http/Controllers/CoreController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Core/Http/Controllers/CoreController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Core/Providers/CoreServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Core/Providers/CoreServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Core/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Core/Providers/RouteServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Core/Resources/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Core/Resources/views/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Core/Resources/views/layouts/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Core/Resources/views/layouts/master.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Core/Routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Core/Routes/api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Core/Routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Core/Routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Core/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Core/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Core/module.json" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Core/module.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Core/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Core/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Core/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Core/webpack.mix.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -53,6 +34,15 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="7" lean-forward="true" selection-start-column="7" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Modules/Blockui/Http/Controllers/Frontend/PublicController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
@@ -137,7 +127,6 @@
         <option value="$PROJECT_DIR$/resources/js/VueHelpers.js" />
         <option value="$PROJECT_DIR$/resources/js/components/BuiManageComponent.vue" />
         <option value="$PROJECT_DIR$/Modules/Blockui/Http/Controllers/BlockuiController.php" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/resources/views/partials/head.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/app.blade.php" />
         <option value="$PROJECT_DIR$/.travis.yml" />
@@ -150,6 +139,7 @@
         <option value="$PROJECT_DIR$/Modules/Blockui/Providers/RouteServiceProvider.php" />
         <option value="$PROJECT_DIR$/Modules/Blockui/Routes/frontend.php" />
         <option value="$PROJECT_DIR$/Modules/Blockui/Http/Controllers/Frontend/PublicController.php" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -404,12 +394,12 @@
       <workItem from="1544268304969" duration="5854000" />
       <workItem from="1544274749378" duration="16073000" />
       <workItem from="1550681582206" duration="11625000" />
-      <workItem from="1550777671251" duration="3921000" />
+      <workItem from="1550777671251" duration="4077000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44189000" />
+    <option name="totallyTimeSpent" value="44345000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -587,13 +577,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="6" lean-forward="true" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/partials/head.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -737,6 +720,13 @@
           <folding>
             <element signature="e#61#89#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="7" lean-forward="true" selection-start-column="7" selection-end-column="7" />
         </state>
       </provider>
     </entry>
