@@ -60,12 +60,12 @@
 /******/ 	__webpack_require__.p = "/";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 2);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./node_modules/babel-loader/lib/index.js?{\"cacheDirectory\":true,\"presets\":[[\"env\",{\"modules\":false,\"targets\":{\"browsers\":[\"> 2%\"],\"uglify\":true}}]],\"plugins\":[\"transform-object-rest-spread\",[\"transform-runtime\",{\"polyfill\":false,\"helpers\":false}]]}!./node_modules/vue-loader/lib/selector.js?type=script&index=0!./resources/js/components/BuiMasterComponent.vue":
+/***/ "./node_modules/babel-loader/lib/index.js?{\"cacheDirectory\":true,\"presets\":[[\"env\",{\"modules\":false,\"targets\":{\"browsers\":[\"> 2%\"],\"uglify\":true}}]],\"plugins\":[\"transform-object-rest-spread\",[\"transform-runtime\",{\"polyfill\":false,\"helpers\":false}]]}!./node_modules/vue-loader/lib/selector.js?type=script&index=0!./resources/js/components/BuiContentComponent.vue":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -83,48 +83,28 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
 
 /* harmony default export */ __webpack_exports__["default"] = ({
+
+    props: ['searched'],
+
     data: function data() {
         var obj = {
+
             urls: {
                 current: window.location.href
-            },
-            assets: {},
-            blocks: {},
-            active_block: null,
-            heading: "BlockUi",
-            searched: null
+            }
         };
+
         return obj;
     },
     mounted: function mounted() {},
 
-    watch: {
-        active_block: function active_block(val) {
-            console.log('val', val);
-        }
-    },
+
     methods: {
         //------------------------------------------------------------
-        searchBlocks: function searchBlocks(e) {
-            if (e) {
-                e.preventDefault();
-            }
-            console.log("master", e);
-        },
-        //---------------------------------------------------------------------
+
+
         //------------------------------------------------------------
         afterRendering: function afterRendering() {
             this.$nextTick(function () {
@@ -134,6 +114,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         //------------------------------------------------------------
         //------------------------------------------------------------
     }
+
 });
 
 /***/ }),
@@ -248,41 +229,17 @@ module.exports = function normalizeComponent (
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/template-compiler/index.js?{\"id\":\"data-v-392e0e90\",\"hasScoped\":false,\"buble\":{\"transforms\":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/js/components/BuiMasterComponent.vue":
+/***/ "./node_modules/vue-loader/lib/template-compiler/index.js?{\"id\":\"data-v-88675002\",\"hasScoped\":false,\"buble\":{\"transforms\":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/js/components/BuiContentComponent.vue":
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "container" }, [
-    _c("div", { staticClass: "row justify-content-center" }, [
-      _c(
-        "div",
-        { staticClass: "col-md-3" },
-        [
-          _c("bui-nav", {
-            on: {
-              searchBlocks: function($event) {
-                _vm.searched = $event
-              }
-            }
-          })
-        ],
-        1
-      ),
-      _vm._v(" "),
-      _c(
-        "div",
-        { staticClass: "col-md-9" },
-        [
-          _c("bui-content", {
-            attrs: { searched: _vm.searched, heading: _vm.heading }
-          })
-        ],
-        1
-      )
-    ])
+  return _c("div", [
+    _c("h1", [_vm._v("Content")]),
+    _vm._v(" "),
+    _c("h2", [_vm._v(_vm._s(_vm.searched))])
   ])
 }
 var staticRenderFns = []
@@ -291,21 +248,21 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-392e0e90", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-88675002", module.exports)
   }
 }
 
 /***/ }),
 
-/***/ "./resources/js/components/BuiMasterComponent.vue":
+/***/ "./resources/js/components/BuiContentComponent.vue":
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 var normalizeComponent = __webpack_require__("./node_modules/vue-loader/lib/component-normalizer.js")
 /* script */
-var __vue_script__ = __webpack_require__("./node_modules/babel-loader/lib/index.js?{\"cacheDirectory\":true,\"presets\":[[\"env\",{\"modules\":false,\"targets\":{\"browsers\":[\"> 2%\"],\"uglify\":true}}]],\"plugins\":[\"transform-object-rest-spread\",[\"transform-runtime\",{\"polyfill\":false,\"helpers\":false}]]}!./node_modules/vue-loader/lib/selector.js?type=script&index=0!./resources/js/components/BuiMasterComponent.vue")
+var __vue_script__ = __webpack_require__("./node_modules/babel-loader/lib/index.js?{\"cacheDirectory\":true,\"presets\":[[\"env\",{\"modules\":false,\"targets\":{\"browsers\":[\"> 2%\"],\"uglify\":true}}]],\"plugins\":[\"transform-object-rest-spread\",[\"transform-runtime\",{\"polyfill\":false,\"helpers\":false}]]}!./node_modules/vue-loader/lib/selector.js?type=script&index=0!./resources/js/components/BuiContentComponent.vue")
 /* template */
-var __vue_template__ = __webpack_require__("./node_modules/vue-loader/lib/template-compiler/index.js?{\"id\":\"data-v-392e0e90\",\"hasScoped\":false,\"buble\":{\"transforms\":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/js/components/BuiMasterComponent.vue")
+var __vue_template__ = __webpack_require__("./node_modules/vue-loader/lib/template-compiler/index.js?{\"id\":\"data-v-88675002\",\"hasScoped\":false,\"buble\":{\"transforms\":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/js/components/BuiContentComponent.vue")
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -322,7 +279,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources/js/components/BuiMasterComponent.vue"
+Component.options.__file = "resources/js/components/BuiContentComponent.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -331,9 +288,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-392e0e90", Component.options)
+    hotAPI.createRecord("data-v-88675002", Component.options)
   } else {
-    hotAPI.reload("data-v-392e0e90", Component.options)
+    hotAPI.reload("data-v-88675002", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -345,20 +302,17 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ "./resources/js/root.js":
+/***/ "./resources/js/welcome.js":
 /***/ (function(module, exports, __webpack_require__) {
 
-Vue.component('master', __webpack_require__("./resources/js/components/BuiMasterComponent.vue"));
-var app = new Vue({
-    el: '#app'
-});
+Vue.component('bui-content', __webpack_require__("./resources/js/components/BuiContentComponent.vue"));
 
 /***/ }),
 
-/***/ 3:
+/***/ 2:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__("./resources/js/root.js");
+module.exports = __webpack_require__("./resources/js/welcome.js");
 
 
 /***/ })

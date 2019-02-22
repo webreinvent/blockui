@@ -16,9 +16,4 @@ import VueHelpers from './VueHelpers';
 Vue.use(VueHelpers);
 
 
-Vue.component('master', require('./components/MasterComponent'));
-
-
-const app = new Vue({
-    el: '#app'
-});
+Vue.component('bui-nav', require('./components/BuiNavComponent'));

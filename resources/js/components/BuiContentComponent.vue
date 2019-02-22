@@ -1,25 +1,20 @@
 <template>
 
-    <div class="row">
+    <div>
 
-        <div class="col-md-12">
+        <h1>Content</h1>
 
-
-            <h1>{{heading}}</h1>
-            <p>Modular & BEM based UI Component Blocks</p>
-
-            {{active_block}}
-
-        </div>
+        <h2>{{ searched }}</h2>
 
     </div>
+
 
 </template>
 
 <script>
     export default {
 
-        props: ['heading'],
+        props:['searched'],
 
         data()
         {
@@ -28,10 +23,6 @@
                 urls:{
                     current: window.location.href
                 },
-                assets: {
-                },
-                active_block: null
-
             };
 
             return obj;
@@ -44,7 +35,6 @@
         methods: {
             //------------------------------------------------------------
 
-            //------------------------------------------------------------
 
             //------------------------------------------------------------
             afterRendering: function()
