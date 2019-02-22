@@ -14,7 +14,11 @@
         @include('partials.nav')
 
         <main class="py-4">
+
             @yield('content')
+
+
+
         </main>
 
 
@@ -29,8 +33,6 @@
     <!--page specific scripts-->
     @yield('scripts')
     <!--/page specific scripts-->
-
-    <script src="{{url("/")}}/public{{ mix('js/root.js') }}" defer></script>
 
 </body>
 </html>

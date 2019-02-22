@@ -1,26 +1,15 @@
 <template>
+    <div>
 
-    <div class="container">
-        <div class="row justify-content-center">
 
-            <div class="col-md-3">
-
-                <bui-nav @searchBlocks="searched = $event"></bui-nav>
-
-            </div>
+        <h1>Services</h1>
 
 
 
-            <div class="col-md-9">
+        {{text}}
 
-                <bui-content :searched="searched" :heading="heading"></bui-content>
-
-            </div>
-        </div>
     </div>
-
 </template>
-
 <script>
 
     export default {
@@ -32,31 +21,19 @@
                 },
                 assets: {
                 },
-                blocks: {},
-                active_block: null,
-                heading: "BlockUi",
-                searched: null,
+                text: null,
             };
             return obj;
         },
         mounted() {
         },
-        watch: {
-            active_block: function(val)
-            {
-                console.log('val', val);
-            }
-        },
+
         methods: {
             //------------------------------------------------------------
-            searchBlocks: function (e) {
-                if(e)
-                {
-                    e.preventDefault();
-                }
-                console.log("master", e);
-            },
+
             //---------------------------------------------------------------------
+
+            //------------------------------------------------------------
             //------------------------------------------------------------
             afterRendering: function()
             {

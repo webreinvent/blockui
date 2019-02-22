@@ -1,1 +1,0 @@
-Vue.component('bui-content', require('./components/BuiContentComponent'));

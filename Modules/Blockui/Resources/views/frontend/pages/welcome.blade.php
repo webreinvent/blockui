@@ -1,13 +1,41 @@
-@extends('layouts.app')
+@extends("layouts.app")
 
-@section('scripts')
-    <script src="{{url("/")}}/public{{ mix('js/welcome.js') }}" defer></script>
+@section('head')
+
 @endsection
 
 
+@section('scripts')
+
+@endsection
+
 @section('content')
 
-<master></master>
+
+    <div class="container">
+
+
+        <div class="row">
+
+            <div class="col-md-3">
+
+                <left :searched="searched" @typed="getTypedInput"  ></left>
+
+            </div>
+            <div class="col-md-9">
+
+                <h1>@{{ searched }}</h1>
+
+                <router-view></router-view>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
 
 
 @endsection
