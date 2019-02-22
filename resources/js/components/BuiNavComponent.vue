@@ -1,10 +1,22 @@
 <template>
 
-    <ul>
-        <li v-if="blocks.length" v-for="item in blocks">
-            {{item}}
-        </li>
-    </ul>
+    <div>
+
+
+        <div class="form-group">
+
+            <input class="form-control" placeholder="search" v-on:input="onSearch($event)" v-model="search" >
+
+        </div>
+
+        <ul>
+            <li v-if="blocks.length" v-for="item in blocks">
+                <a v-on:click="getBlock($event)" v-bind:href="'http://localhost/blockui/block?path='+item">{{item}}</a>
+            </li>
+        </ul>
+
+    </div>
+
 
 </template>
 
@@ -25,7 +37,8 @@
                     ],
 
                 },
-                blocks: {}
+                blocks: {},
+                search: "",
             };
 
             return obj;
@@ -38,6 +51,18 @@
         methods: {
             //------------------------------------------------------------
 
+            //------------------------------------------------------------
+            onSearch(e)
+            {
+                if(e)
+                {
+                    e.preventDefault();
+                }
+
+                console.log('searchBlocks data', e.target.value);
+                this.$emit('searchBlocks', e.target.value);
+
+            },
             //------------------------------------------------------------
             showAddModal: function (e) {
                 if(e)
@@ -63,6 +88,28 @@
                 console.log('blocks list', data);
 
                 this.blocks = data;
+
+                this.afterRendering();
+            },
+            //------------------------------------------------------------
+            getBlock: function (e) {
+                if(e)
+                {
+                    e.preventDefault();
+                }
+
+                var el = e.target;
+
+                var url = $(el).attr('href');
+                var params = {};
+                this.$helpers.ajax(url, params, this.getBlockAfter);
+            },
+            //---------------------------------------------------------------------
+            getBlockAfter: function (data) {
+
+                console.log('block list', data);
+
+                this.$emit('active_block', this.active_block);
 
                 this.afterRendering();
             },

@@ -23,8 +23,10 @@ Route::group(
             ->name( 'bui.welcome' );
         //------------------------------------------------
         Route::any( 'blocks/list', 'PublicController@getBlocks' )
-            ->name( 'bui.block.list' );
+            ->name( 'bui.blocks.list' );
         //------------------------------------------------
+        Route::any( 'block', 'PublicController@getBlock' )
+            ->name( 'bui.block' );
         //------------------------------------------------
         //------------------------------------------------
         Route::get( 'block/create', 'PublicController@blockCreate' )

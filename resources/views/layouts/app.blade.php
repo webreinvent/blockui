@@ -11,6 +11,10 @@
 <body>
     <div id="app">
 
+
+
+
+
         @include('partials.nav')
 
         <main class="py-4">
@@ -25,6 +29,8 @@
     <script src="{{url("/")}}/public/vendor/nprogress/nprogress.js" defer></script>
     <script src="{{url("/")}}/public/vendor/alertify/alertify.js" defer></script>
     <script src="{{url("/")}}/public{{ mix('js/app.js') }}" defer></script>
+
+
 
 
     <!--page specific scripts-->
