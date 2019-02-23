@@ -26,7 +26,9 @@
 
                 <h1>@{{ searched }}</h1>
 
-                <router-view></router-view>
+                <router-view @on-click="appOnClick"></router-view>
+
+
 
             </div>
 

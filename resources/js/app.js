@@ -26,7 +26,11 @@ import Services from './components/Services';
 const router = new VueRouter({
     routes: [
         { path: '/', component: Home },
-        { path: '/services', component: Services },
+        {
+            path: '/services',
+            component: Services,
+
+        },
     ]
 });
 
@@ -39,6 +43,9 @@ const app = new Vue({
     data: {
         searched: 'searched'
     },
+    mounted() {
+
+    },
     methods:{
 
         //-----------------------------------------------------------
@@ -50,7 +57,11 @@ const app = new Vue({
 
         },
         //-----------------------------------------------------------
+        appOnClick: function (e) {
 
+            console.log('asdf');
+
+        }
         //-----------------------------------------------------------
         //-----------------------------------------------------------
     }

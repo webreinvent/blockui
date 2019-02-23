@@ -1728,6 +1728,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -1747,7 +1748,14 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     methods: {
         //------------------------------------------------------------
 
-        //---------------------------------------------------------------------
+        //------------------------------------------------------------
+        btnClicked: function btnClicked(e) {
+            if (e) {
+                e.preventDefault();
+            }
+
+            this.$emit("on-click", "text");
+        },
 
         //------------------------------------------------------------
         //------------------------------------------------------------
@@ -36461,7 +36469,13 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("div", [
     _c("h1", [_vm._v("Services")]),
-    _vm._v("\r\n\r\n\r\n\r\n        " + _vm._s(_vm.text) + "\r\n\r\n    ")
+    _vm._v(" "),
+    _c(
+      "button",
+      { staticClass: "btn btn-primary", on: { click: _vm.btnClicked } },
+      [_vm._v("Click")]
+    ),
+    _vm._v("\r\n\r\n        " + _vm._s(_vm.text) + "\r\n\r\n    ")
   ])
 }
 var staticRenderFns = []
@@ -51994,7 +52008,11 @@ Vue.use(__WEBPACK_IMPORTED_MODULE_2__VueHelpers__["a" /* default */]);
 
 
 var router = new __WEBPACK_IMPORTED_MODULE_0_vue_router__["a" /* default */]({
-    routes: [{ path: '/', component: __WEBPACK_IMPORTED_MODULE_4__components_Home___default.a }, { path: '/services', component: __WEBPACK_IMPORTED_MODULE_5__components_Services___default.a }]
+    routes: [{ path: '/', component: __WEBPACK_IMPORTED_MODULE_4__components_Home___default.a }, {
+        path: '/services',
+        component: __WEBPACK_IMPORTED_MODULE_5__components_Services___default.a
+
+    }]
 });
 
 var app = new Vue({
@@ -52006,6 +52024,8 @@ var app = new Vue({
     data: {
         searched: 'searched'
     },
+    mounted: function mounted() {},
+
     methods: {
 
         //-----------------------------------------------------------
@@ -52014,9 +52034,12 @@ var app = new Vue({
             console.log('occ');
 
             this.searched = e;
-        }
+        },
         //-----------------------------------------------------------
+        appOnClick: function appOnClick(e) {
 
+            console.log('asdf');
+        }
         //-----------------------------------------------------------
         //-----------------------------------------------------------
     }
