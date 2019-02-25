@@ -11,6 +11,6 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.js('Modules/Blockui/Resources/Assets/js/blockui.js', 'public/js')
+mix.js('Modules/Blockui/Resources/Assets/js/frontend/blockui.js', 'public/js')
    .sass('resources/sass/app.scss', 'public/css')
     .version();
