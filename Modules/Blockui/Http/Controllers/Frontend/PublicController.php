@@ -14,7 +14,7 @@ class PublicController extends Controller
     function __construct(Request $request)
     {
         $this->data = new \stdClass();
-        $this->data->view = "blockui::frontend.pages.";
+        $this->data->view = "blockui::frontend.theme-v1.pages.";
     }
 
     //-----------------------------------------------------------------------------

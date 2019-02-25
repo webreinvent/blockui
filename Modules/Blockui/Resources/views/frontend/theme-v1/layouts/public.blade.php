@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
-@include('partials.head')
+@include('blockui::frontend.theme-v1.layouts.partials.head')
 
 <!--page specific head-->
 @yield('head')
@@ -26,8 +26,7 @@
 
 
 <!-- Scripts -->
-<script src="{{url("/")}}/public/vendor/nprogress/nprogress.js" defer></script>
-<script src="{{url("/")}}/public/vendor/alertify/alertify.js" defer></script>
+<script src="{{url("/")}}/public{{ mix('js/blockui-vendor.js') }}" defer></script>
 <script src="{{url("/")}}/public{{ mix('js/blockui.js') }}" defer></script>
 
 <!--page specific scripts-->

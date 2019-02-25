@@ -1,4 +1,4 @@
-@extends("blockui::frontend.layouts.public")
+@extends("blockui::frontend.theme-v1.layouts.public")
 
 @section('head')
 
