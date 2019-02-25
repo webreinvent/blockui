@@ -4,7 +4,7 @@
 <!-- CSRF Token -->
 <meta name="csrf-token" content="{{ csrf_token() }}">
 
-<title>{{ config('app.name', 'BlockUI') }}</title>
+<title>BlockUI: Independent & Reusable UI Blocks/Components Snippets</title>
 
 <base href="{{\URL::to('/')}}" />
 

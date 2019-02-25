@@ -42,7 +42,7 @@
             <div class="col-md-12">
 
                 <h1>BlockUI.io</h1>
-                <p>Independent, Reusable & BEM (Block Element Modifier) UI Blocks/Components Snippets</p>
+                <p>Independent, Reusable & BEM (Block Element Modifier) based UI Blocks/Components Snippets</p>
 
                 <hr/>
 
