@@ -18,9 +18,11 @@
                 <!-- Authentication Links -->
 
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('bui.block.create') }}">{{ __('New Block') }}</a>
+                    <a class="nav-link" target="_blank" href="https://github.com/webreinvent/bui-blocks">{{ __('Contribute') }}</a>
                 </li>
 
+
+                {{--
                 @guest
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
@@ -50,6 +52,8 @@
                         </div>
                     </li>
                 @endguest
+                --}}
+
             </ul>
         </div>
     </div>
