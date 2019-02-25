@@ -37,7 +37,7 @@
                 </ul>
                 <div class="tab-content" id="pills-tabContent" v-if="block">
                     <div class="tab-pane fade show active" id="pills-preview" role="tabpanel" >
-                        <iframe v-bind:src="block.iframe"></iframe>
+                        <iframe></iframe>
                     </div>
                     <div class="tab-pane fade show " id="pills-html" role="tabpanel" >
 
@@ -131,8 +131,18 @@
                 this.aceEditor('pills-css', 'css', this.block.css, 5);
                 this.aceEditor('pills-js', 'javascript', this.block.js, 5);
 
-                this.$helpers.stopNprogress();
+                var self = this;
+
+                $('iframe').attr('src', data.iframe).height('100%');
+
+                this.$nextTick(function () {
+                    this.$helpers.stopNprogress();
+                });
+
+
             },
+            //---------------------------------------------------------------------
+
             //---------------------------------------------------------------------
             aceEditor: function (element_id, mode, data, height) {
 
@@ -171,6 +181,8 @@
                  });
 
                  */
+
+
 
                 return editor;
             },
