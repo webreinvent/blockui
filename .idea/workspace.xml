@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6982259-e0d9-4a5e-9deb-fcf473bd2c36" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/Modules/Blockui/Resources/assets/js/blockui.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Blockui/Resources/views/frontend/layouts/public.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Blockui/Resources/assets/js/app.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Modules/Blockui/Resources/views/frontend/pages/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Blockui/Resources/views/frontend/pages/welcome.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/mix-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/Services.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/Services.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,83 +21,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="27" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Modules/Blockui/Http/Controllers/Frontend/PublicController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="24" column="20" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="39" />
-              <folding>
-                <element signature="e#61#89#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Modules/Blockui/Resources/views/frontend/pages/block-create.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" selection-start-line="19" selection-end-line="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Modules/Blockui/Resources/views/frontend/pages/welcome.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="30" column="16" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="16" />
+            <state relative-caret-position="153">
+              <caret line="9" column="11" lean-forward="true" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/js/app.js">
+        <entry file="file://$PROJECT_DIR$/Modules/Blockui/Resources/views/frontend/layouts/public.blade.php">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webpack.mix.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="301">
-              <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
-              <folding>
-                <element signature="e#55#90#0" expanded="true" />
-                <element signature="e#421#458#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="51">
+              <caret line="3" column="44" selection-start-line="3" selection-start-column="44" selection-end-line="3" selection-end-column="44" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/js/components/Left.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="43" column="28" selection-start-line="43" selection-start-column="28" selection-end-line="43" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/js/components/Home.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/js/components/Services.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="41" column="31" selection-start-line="41" selection-start-column="31" selection-end-line="41" selection-end-column="31" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/Modules/Blockui/Resources/assets/js/blockui.js">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -117,11 +67,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Modules/Blockui/Resources/views/frontend/partials/errors.blade.php" />
         <option value="$PROJECT_DIR$/Modules/Blockui/Resources/views/frontend/partials/nav.blade.php" />
         <option value="$PROJECT_DIR$/Modules/Blockui/Resources/views/frontend/pages/block-create.blade.php" />
         <option value="$PROJECT_DIR$/composer.json" />
-        <option value="$PROJECT_DIR$/Modules/Blockui/Resources/assets/js/app.js" />
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/resources/views/partials/nav.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/welcome.blade.php" />
@@ -158,7 +106,6 @@
         <option value="$PROJECT_DIR$/Modules/Blockui/Resources/views/frontend/pages/TestComponent.vue" />
         <option value="$PROJECT_DIR$/resources/js/components/TestComponent.vue" />
         <option value="$PROJECT_DIR$/resources/js/root.js" />
-        <option value="$PROJECT_DIR$/webpack.mix.js" />
         <option value="$PROJECT_DIR$/resources/js/components/Master.vue" />
         <option value="$PROJECT_DIR$/resources/js/components/Right.vue" />
         <option value="$PROJECT_DIR$/resources/views/layouts/app.blade.php" />
@@ -167,6 +114,9 @@
         <option value="$PROJECT_DIR$/resources/js/components/Left.vue" />
         <option value="$PROJECT_DIR$/resources/js/app.js" />
         <option value="$PROJECT_DIR$/resources/js/components/Services.vue" />
+        <option value="$PROJECT_DIR$/Modules/Blockui/Resources/assets/js/app.js" />
+        <option value="$PROJECT_DIR$/webpack.mix.js" />
+        <option value="$PROJECT_DIR$/Modules/Blockui/Resources/views/frontend/layouts/app.blade.php" />
         <option value="$PROJECT_DIR$/Modules/Blockui/Resources/views/frontend/pages/welcome.blade.php" />
       </list>
     </option>
@@ -306,7 +256,110 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="blockui" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blockui" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blockui" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blockui" type="462c0819:PsiDirectoryNode" />
+              <item name="Modules" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blockui" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blockui" type="462c0819:PsiDirectoryNode" />
+              <item name="Modules" type="462c0819:PsiDirectoryNode" />
+              <item name="Blockui" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blockui" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blockui" type="462c0819:PsiDirectoryNode" />
+              <item name="Modules" type="462c0819:PsiDirectoryNode" />
+              <item name="Blockui" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blockui" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blockui" type="462c0819:PsiDirectoryNode" />
+              <item name="Modules" type="462c0819:PsiDirectoryNode" />
+              <item name="Blockui" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blockui" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blockui" type="462c0819:PsiDirectoryNode" />
+              <item name="Modules" type="462c0819:PsiDirectoryNode" />
+              <item name="Blockui" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="Frontend" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blockui" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blockui" type="462c0819:PsiDirectoryNode" />
+              <item name="Modules" type="462c0819:PsiDirectoryNode" />
+              <item name="Blockui" type="462c0819:PsiDirectoryNode" />
+              <item name="Resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blockui" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blockui" type="462c0819:PsiDirectoryNode" />
+              <item name="Modules" type="462c0819:PsiDirectoryNode" />
+              <item name="Blockui" type="462c0819:PsiDirectoryNode" />
+              <item name="Resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blockui" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blockui" type="462c0819:PsiDirectoryNode" />
+              <item name="Modules" type="462c0819:PsiDirectoryNode" />
+              <item name="Blockui" type="462c0819:PsiDirectoryNode" />
+              <item name="Resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blockui" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blockui" type="462c0819:PsiDirectoryNode" />
+              <item name="Modules" type="462c0819:PsiDirectoryNode" />
+              <item name="Blockui" type="462c0819:PsiDirectoryNode" />
+              <item name="Resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="layouts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blockui" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blockui" type="462c0819:PsiDirectoryNode" />
+              <item name="Modules" type="462c0819:PsiDirectoryNode" />
+              <item name="Blockui" type="462c0819:PsiDirectoryNode" />
+              <item name="Resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blockui" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blockui" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blockui" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blockui" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -318,17 +371,17 @@
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\PhpStorm 2018.3.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\xampp72\htdocs\blockui\resources\js\components" />
-      <recent name="F:\xampp72\htdocs\blockui\Modules\Blockui\Resources\views\frontend\pages" />
-      <recent name="F:\xampp72\htdocs\blockui\resources\js" />
-      <recent name="F:\xampp72\htdocs\blockui\public\vendor\nprogress" />
-      <recent name="F:\xampp72\htdocs\blockui" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\xampp72\htdocs\blockui\Modules\Blockui\Resources\views\frontend\pages" />
       <recent name="F:\xampp72\htdocs\blockui\public\js" />
       <recent name="F:\xampp72\htdocs\blockui\Modules\Blockui\Http\Controllers\Frontend" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\xampp72\htdocs\blockui\Modules\Blockui\Resources\views\frontend\layouts" />
+      <recent name="F:\xampp72\htdocs\blockui\Modules\Blockui\Resources\assets\js" />
+      <recent name="F:\xampp72\htdocs\blockui\resources\js\components" />
+      <recent name="F:\xampp72\htdocs\blockui\Modules\Blockui\Resources\views\frontend\pages" />
+      <recent name="F:\xampp72\htdocs\blockui\resources\js" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -360,12 +413,13 @@
       <workItem from="1550777671251" duration="7372000" />
       <workItem from="1550825368910" duration="15572000" />
       <workItem from="1550863267634" duration="6216000" />
-      <workItem from="1550915209146" duration="1867000" />
+      <workItem from="1550915209146" duration="2075000" />
+      <workItem from="1551081854672" duration="2652000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71295000" />
+    <option name="totallyTimeSpent" value="74155000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -395,7 +449,7 @@
       <window_info anchor="bottom" id="TODO" order="11" weight="0.3289256" />
       <window_info anchor="bottom" id="File Transfer" order="12" weight="0.3289256" />
       <window_info anchor="bottom" id="TypeScript" order="13" />
-      <window_info anchor="right" content_ui="combo" id="Project" order="0" weight="0.35022694" />
+      <window_info active="true" anchor="right" content_ui="combo" id="Project" order="0" visible="true" weight="0.35022694" />
       <window_info anchor="right" id="Structure" order="1" side_tool="true" weight="0.24962178" />
       <window_info anchor="right" id="Terminal" order="2" type="SLIDING" weight="0.5332829" />
       <window_info anchor="right" id="JSON Viewer" order="3" />
@@ -410,24 +464,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Modules/Core/Http/Controllers/CoreController.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Modules/Blockui/Routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="27" column="31" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Modules/Core/Routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="14" column="35" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Modules/Blockui/Library/CrawlerHelp.php" />
     <entry file="file://$PROJECT_DIR$/Modules/Blockui/Library/Extractor.php" />
     <entry file="file://$PROJECT_DIR$/Modules/Core/Providers/CoreServiceProvider.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -558,9 +594,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/root.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/partials/nav.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -590,24 +623,28 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/js/components/Right.vue" />
-    <entry file="file://$PROJECT_DIR$/webpack.mix.js">
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
+        <state relative-caret-position="153">
+          <caret line="9" column="7" lean-forward="true" selection-end-line="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="27" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
+        <state relative-caret-position="148">
+          <caret line="45" column="15" lean-forward="true" selection-start-line="45" selection-start-column="15" selection-end-line="45" selection-end-column="15" />
+          <folding>
+            <element signature="e#55#90#0" expanded="true" />
+            <element signature="e#421#458#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Modules/Blockui/Http/Controllers/Frontend/PublicController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="24" column="20" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="39" />
+        <state relative-caret-position="408">
+          <caret line="24" column="20" lean-forward="true" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="39" />
           <folding>
             <element signature="e#61#89#0#PHP" expanded="true" />
           </folding>
@@ -621,13 +658,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/components/Home.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/js/components/Left.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
@@ -635,10 +665,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/app.js">
+    <entry file="file://$PROJECT_DIR$/resources/js/components/Home.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
+        <state relative-caret-position="187">
+          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/components/Services.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="25" column="14" lean-forward="true" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/Blockui/Resources/assets/js/blockui.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/Blockui/Resources/assets/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="34" column="3" lean-forward="true" selection-start-line="34" selection-start-column="3" selection-end-line="34" selection-end-column="3" />
           <folding>
             <element signature="e#55#90#0" expanded="true" />
             <element signature="e#421#458#0" expanded="true" />
@@ -646,17 +693,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/components/Services.vue">
+    <entry file="file://$PROJECT_DIR$/webpack.mix.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="41" column="31" selection-start-line="41" selection-start-column="31" selection-end-line="41" selection-end-column="31" />
+        <state relative-caret-position="51">
+          <caret line="3" column="44" selection-start-line="3" selection-start-column="44" selection-end-line="3" selection-end-column="44" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/root.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="48" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/Blockui/Resources/views/frontend/layouts/app.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/Blockui/Resources/views/frontend/layouts/public.blade.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/Modules/Blockui/Resources/views/frontend/pages/welcome.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="30" column="16" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="16" />
+        <state relative-caret-position="153">
+          <caret line="9" column="11" lean-forward="true" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
         </state>
       </provider>
     </entry>
