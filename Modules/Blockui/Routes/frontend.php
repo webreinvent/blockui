@@ -22,12 +22,14 @@ Route::group(
         Route::get( '/', 'PublicController@index' )
             ->name( 'bui.welcome' );
         //------------------------------------------------
-        Route::any( 'blocks/list', 'PublicController@getBlocks' )
-            ->name( 'bui.blocks.list' );
+        Route::any( 'categories', 'PublicController@getCategories' )
+            ->name( 'bui.categories' );
+        //------------------------------------------------
+        Route::any( 'blocks', 'PublicController@getBlocks' )
+            ->name( 'bui.blocks' );
         //------------------------------------------------
         Route::any( 'block', 'PublicController@getBlock' )
             ->name( 'bui.block' );
-        //------------------------------------------------
         //------------------------------------------------
         Route::get( 'block/create', 'PublicController@blockCreate' )
             ->name( 'bui.block.create' );

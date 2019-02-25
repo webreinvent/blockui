@@ -2,15 +2,13 @@
     <div>
 
 
-        <ul>
-            <li><router-link class="nav-link" to="/">Home</router-link></li>
-            <li><router-link class="nav-link" to="/services">Services</router-link></li>
-
+        <ul v-if="categories">
+            <li v-for="category in categories" class="nav-link">
+                <router-link
+                        v-bind:to="{ path: '/blocks/'+category}"
+                        >{{category}}</router-link>
+            </li>
         </ul>
-
-        <input type="text" v-model="text" v-on:input="onType($event)" class="form-control" />
-
-        <h2  >{{searched}}</h2>
 
 
     </div>
@@ -22,18 +20,53 @@
         {
             let obj = {
                 urls:{
-                    current: window.location.href
+                    current: window.location.href,
+                    base: $("base").attr('href'),
                 },
                 assets: {
                 },
-                text: null,
+                categories: null,
             };
             return obj;
         },
         mounted() {
+
+            //---------------------------------------------
+            this.onLoad();
+            //---------------------------------------------
+
         },
 
         methods: {
+            //------------------------------------------------------------
+            onLoad: function()
+            {
+                this.getNav();
+            },
+            //------------------------------------------------------------
+
+            getNav: function (e) {
+                if(e)
+                {
+                    e.preventDefault();
+                }
+
+                var url = this.urls.base+"/categories";
+
+                console.log('url',url);
+
+                var params = {};
+                this.$helpers.ajax(url, params, this.getNavAfter);
+            },
+            //---------------------------------------------------------------------
+            getNavAfter: function (data) {
+
+                this.categories = data;
+
+                this.$helpers.stopNprogress();
+            },
+            //------------------------------------------------------------
+            //------------------------------------------------------------
             //------------------------------------------------------------
             onType: function (e) {
                 if(e)

@@ -6,7 +6,7 @@
 
 <title>{{ config('app.name', 'BlockUI') }}</title>
 
-
+<base href="{{\URL::to('/')}}" />
 
 <!-- Fonts -->
 <link rel="dns-prefetch" href="//fonts.gstatic.com">

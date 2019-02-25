@@ -27,32 +27,106 @@ class PublicController extends Controller
     }
 
     //-----------------------------------------------------------------------------
-    public function getBlocks(Request $request)
+    public function getCategories(Request $request)
     {
-        $list = \Storage::directories('/public/blocks/nav');
+        $list = \Storage::directories('/public/blocks');
+
+        $result = [];
+
+        foreach($list as $item)
+        {
+            $item = str_replace("public/blocks/", "", $item);
+            $result[] = $item;
+        }
 
         $response['status'] = 'success';
-        $response['data'] = $list;
+        $response['data'] = $result;
 
         return response()->json($response);
 
     }
     //-----------------------------------------------------------------------------
-    public function getBlock(Request $request)
+    public function getBlocks(Request $request)
     {
+        $rules = array(
+            'category' => 'required',
+        );
+
+        $validator = \Validator::make( $request->all(), $rules);
+        if ( $validator->fails() ) {
+
+            $errors             = errorsToArray($validator->errors());
+            $response['status'] = 'failed';
+            $response['errors'] = $errors;
+            return response()->json($response);
+        }
 
         $inputs = $request->all();
 
-        $extractor = new Extractor();
 
         $data = [];
 
-        $data['path'] = $inputs['path']."/index.html";
+        $path = "public/blocks/".$inputs['category'];
 
-        $source = \Storage::disk('local')->get($data['path']);
+        $list = \Storage::directories($path);
+
+        $result = [];
+
+        $i = 0;
+        foreach($list as $block_path)
+        {
+            $json_path = \Storage::disk('local')->get($block_path."/config.json");
+            $result[$i] = json_decode($json_path, true);
+
+            if(isset($result[$i]['thumbnail']))
+            {
+                $thumbnail = url("/").\Storage::disk('local')->url("app/".$block_path."/".$result[$i]['thumbnail']);
+                $result[$i]['thumbnail'] = $thumbnail;
+            }
+
+            $i++;
+        }
+
+        $response['status'] = 'success';
+        $response['data'] = $result;
+
+        return response()->json($response);
+
+    }
+    //-----------------------------------------------------------------------------
+
+    //-----------------------------------------------------------------------------
+    public function getBlock(Request $request)
+    {
+        $rules = array(
+            'category' => 'required',
+            'name' => 'required',
+        );
+
+        $validator = \Validator::make( $request->all(), $rules);
+        if ( $validator->fails() ) {
+
+            $errors             = errorsToArray($validator->errors());
+            $response['status'] = 'failed';
+            $response['errors'] = $errors;
+            return response()->json($response);
+        }
+
+        $inputs = $request->all();
+
+
+        $block_path = 'public/blocks/'.$inputs['category']."/".$inputs['name'];
+        $json_path = \Storage::disk('local')->get($block_path."/config.json");
+        $data['config'] = json_decode($json_path, true);
+
+        $path = $block_path."/index.html";
+        $source = \Storage::disk('local')->get($path);
+
+        $extractor = new Extractor();
         $data['html'] = $extractor->extractUnit($source, "<!--#blockui-html#-->", "<!--/#blockui-html#-->");
         $data['css'] = strip_tags($extractor->extractUnit($source, "<!--#blockui-css#-->", "<!--/#blockui-css#-->"));
         $data['js'] = strip_tags($extractor->extractUnit($source, "<!--#blockui-js#-->", "<!--/#blockui-js#-->"));
+        $data['iframe'] = url("/").\Storage::disk('local')->url("app/public/blocks/".$inputs['category']."/".$inputs['name']."/index.html");
 
         $response['status'] = 'success';
         $response['data'] = $data;
@@ -60,6 +134,8 @@ class PublicController extends Controller
         return response()->json($response);
 
     }
+    //-----------------------------------------------------------------------------
+
     //-----------------------------------------------------------------------------
     //-----------------------------------------------------------------------------
     //-----------------------------------------------------------------------------

@@ -26,6 +26,7 @@
 
 
 <!-- Scripts -->
+<script src="{{url("/")}}/public/vendor/ace/ace.js"></script>
 <script src="{{url("/")}}/public{{ mix('js/blockui-vendor.js') }}" defer></script>
 <script src="{{url("/")}}/public{{ mix('js/blockui.js') }}" defer></script>
 

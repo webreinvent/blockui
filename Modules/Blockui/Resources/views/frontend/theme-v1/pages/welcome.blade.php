@@ -2,6 +2,30 @@
 
 @section('head')
 
+    <style>
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+
+            background: #eee ;
+
+
+            z-index: 1;
+        }
+    </style>
+
+    <style type="text/css" media="screen">
+        #editor {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+    </style>
+
 @endsection
 
 
@@ -14,6 +38,16 @@
 
     <div class="container">
 
+        <div class="row">
+            <div class="col-md-12">
+
+                <h1>BlockUI.io</h1>
+                <p>Independent, Reusable & BEM (Block Element Modifier) UI Blocks/Components Snippets</p>
+
+                <hr/>
+
+            </div>
+        </div>
 
         <div class="row">
 
@@ -24,10 +58,7 @@
             </div>
             <div class="col-md-9">
 
-                <h1>@{{ searched }}</h1>
-
                 <router-view @on-click="appOnClick"></router-view>
-
 
 
             </div>
