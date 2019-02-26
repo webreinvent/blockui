@@ -1,14 +1,31 @@
 <template>
-    <div>
+    <div class="row">
 
 
-        <h1>Home</h1>
+        <div class="col-md-2">
+
+            <left></left>
+
+        </div>
+
+
+
+        <div class="col-md-10">
+
+
+
+
+        </div>
 
 
     </div>
 </template>
 <script>
+    import Left from './Left';
     export default {
-        name: 'Home'
+        name: 'Home',
+        components:{
+            'left': Left
+        },
     }
 </script>

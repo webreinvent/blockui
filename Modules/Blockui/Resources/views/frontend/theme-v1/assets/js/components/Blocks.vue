@@ -1,46 +1,65 @@
 <template>
-    <div>
+    <div class="row">
+
+        <div class="col-md-2">
+
+            <left></left>
+
+        </div>
 
 
 
-        <div class="row">
+        <div class="col-md-10">
 
-            <div class="col-md-4" v-if="blocks" v-for="block in blocks" >
 
-                <div class="card" style="cursor: pointer;" >
-                    <div class="card-image">
-                        <img v-if="block.thumbnail" style="width: 100%;" v-bind:src="block.thumbnail" />
-                        <img v-else style="width: 100%;" src="https://via.placeholder.com/500x300.png?text=Thumbnail+Missing" />
-                    </div>
+            <div class="row">
 
-                    <div class="card-title">
-                        {{block.name}}
-                    </div>
+                <div class="col-md-4" v-if="blocks" v-for="block in blocks" >
 
-                    <div v-if="block.description" class="card-details">
-                        {{block.description}}
-                    </div>
+                    <div class="card" style="cursor: pointer;" >
+                        <div class="card-image">
+                            <img v-if="block.thumbnail" style="width: 100%;" v-bind:src="block.thumbnail" />
+                            <img v-else style="width: 100%;" src="https://via.placeholder.com/500x300.png?text=Thumbnail+Missing" />
+                        </div>
 
-                    <div class="card-link">
-                        <router-link class="btn btn-block btn-primary"
-                                v-bind:to="{ path: '/blocks/'+segments.category+'/'+block.name}"
-                        >View</router-link>
+                        <div class="card-title">
+                            {{block.name}}
+                        </div>
+
+                        <div v-if="block.description" class="card-details">
+                            {{block.description}}
+                        </div>
+
+                        <div class="card-link">
+                            <router-link class="btn btn-block btn-primary"
+                                         v-bind:to="{ path: '/blocks/'+segments.category+'/'+block.name}"
+                            >View</router-link>
+                        </div>
+
                     </div>
 
                 </div>
 
+
             </div>
 
-
         </div>
+
+
 
 
 
     </div>
 </template>
 <script>
+
+    import Left from './Left';
+
     export default {
         props:['query', 'segments'],
+        components:{
+            'left': Left
+        },
         data()
         {
             let obj = {

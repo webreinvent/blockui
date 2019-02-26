@@ -19,7 +19,7 @@ Vue.config.async = false;
 import VueHelpers from './VueHelpers';
 Vue.use(VueHelpers);
 
-import Left from './components/Left';
+
 import Home from './components/Home';
 import Blocks from './components/Blocks';
 import Block from './components/Block';
@@ -53,9 +53,7 @@ const router = new VueRouter({
 
 const app = new Vue({
     el: '#app',
-    components:{
-        'left': Left
-    },
+
     router,
     data: {
         searched: 'searched'

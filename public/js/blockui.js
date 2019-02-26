@@ -179,14 +179,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_router__ = __webpack_require__("./node_modules/vue-router/dist/vue-router.esm.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_resource__ = __webpack_require__("./node_modules/vue-resource/dist/vue-resource.esm.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__VueHelpers__ = __webpack_require__("./Modules/Blockui/Resources/views/frontend/theme-v1/assets/js/VueHelpers.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_Left__ = __webpack_require__("./Modules/Blockui/Resources/views/frontend/theme-v1/assets/js/components/Left.vue");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_Left___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__components_Left__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_Home__ = __webpack_require__("./Modules/Blockui/Resources/views/frontend/theme-v1/assets/js/components/Home.vue");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_Home___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__components_Home__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_Blocks__ = __webpack_require__("./Modules/Blockui/Resources/views/frontend/theme-v1/assets/js/components/Blocks.vue");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_Blocks___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__components_Blocks__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_Block__ = __webpack_require__("./Modules/Blockui/Resources/views/frontend/theme-v1/assets/js/components/Block.vue");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_Block___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__components_Block__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_Home__ = __webpack_require__("./Modules/Blockui/Resources/views/frontend/theme-v1/assets/js/components/Home.vue");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_Home___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__components_Home__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_Blocks__ = __webpack_require__("./Modules/Blockui/Resources/views/frontend/theme-v1/assets/js/components/Blocks.vue");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_Blocks___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__components_Blocks__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_Block__ = __webpack_require__("./Modules/Blockui/Resources/views/frontend/theme-v1/assets/js/components/Block.vue");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_Block___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__components_Block__);
 __webpack_require__("./Modules/Blockui/Resources/views/frontend/theme-v1/assets/js/bootstrap.js");
 
 window.Vue = __webpack_require__("./node_modules/vue/dist/vue.common.js");
@@ -210,14 +208,13 @@ Vue.use(__WEBPACK_IMPORTED_MODULE_2__VueHelpers__["a" /* default */]);
 
 
 
-
 var router = new __WEBPACK_IMPORTED_MODULE_0_vue_router__["a" /* default */]({
     routes: [{
         path: '/',
-        component: __WEBPACK_IMPORTED_MODULE_4__components_Home___default.a
+        component: __WEBPACK_IMPORTED_MODULE_3__components_Home___default.a
     }, {
         path: '/blocks/:category',
-        component: __WEBPACK_IMPORTED_MODULE_5__components_Blocks___default.a,
+        component: __WEBPACK_IMPORTED_MODULE_4__components_Blocks___default.a,
         props: function props(route) {
             return {
                 query: route.query,
@@ -227,7 +224,7 @@ var router = new __WEBPACK_IMPORTED_MODULE_0_vue_router__["a" /* default */]({
 
     }, {
         path: '/blocks/:category/:name',
-        component: __WEBPACK_IMPORTED_MODULE_6__components_Block___default.a,
+        component: __WEBPACK_IMPORTED_MODULE_5__components_Block___default.a,
         props: function props(route) {
             return {
                 query: route.query,
@@ -240,9 +237,7 @@ var router = new __WEBPACK_IMPORTED_MODULE_0_vue_router__["a" /* default */]({
 
 var app = new Vue({
     el: '#app',
-    components: {
-        'left': __WEBPACK_IMPORTED_MODULE_3__components_Left___default.a
-    },
+
     router: router,
     data: {
         searched: 'searched'
@@ -2156,8 +2151,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     props: ['query', 'segments'],
@@ -2309,6 +2302,21 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Left__ = __webpack_require__("./Modules/Blockui/Resources/views/frontend/theme-v1/assets/js/components/Left.vue");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Left___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__Left__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -2350,8 +2358,14 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 
+
+
+
 /* harmony default export */ __webpack_exports__["default"] = ({
     props: ['query', 'segments'],
+    components: {
+        'left': __WEBPACK_IMPORTED_MODULE_0__Left___default.a
+    },
     data: function data() {
         var obj = {
             urls: {
@@ -2444,6 +2458,21 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Left__ = __webpack_require__("./Modules/Blockui/Resources/views/frontend/theme-v1/assets/js/components/Left.vue");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Left___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__Left__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -2454,8 +2483,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 
+
 /* harmony default export */ __webpack_exports__["default"] = ({
-    name: 'Home'
+    name: 'Home',
+    components: {
+        'left': __WEBPACK_IMPORTED_MODULE_0__Left___default.a
+    }
 });
 
 /***/ }),
@@ -37170,16 +37203,13 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("div", { staticClass: "row" }, [
+    _c("div", { staticClass: "col-md-2" }, [_c("left")], 1),
+    _vm._v(" "),
+    _c("div", { staticClass: "col-md-10" })
+  ])
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", [_c("h1", [_vm._v("Home")])])
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
@@ -37198,46 +37228,44 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [
-    _c("div", { staticClass: "row" }, [
-      _vm.block
-        ? _c("div", { staticClass: "col-md-12" }, [
-            _c("h2", [_vm._v(_vm._s(_vm.block.name))]),
-            _vm._v(" "),
-            _vm.block.description
-              ? _c("p", [_vm._v(_vm._s(_vm.block.description))])
-              : _vm._e()
-          ])
-        : _vm._e(),
+  return _c("div", { staticClass: "row" }, [
+    _vm.block
+      ? _c("div", { staticClass: "col-md-12" }, [
+          _c("h2", [_vm._v(_vm._s(_vm.block.name))]),
+          _vm._v(" "),
+          _vm.block.description
+            ? _c("p", [_vm._v(_vm._s(_vm.block.description))])
+            : _vm._e()
+        ])
+      : _vm._e(),
+    _vm._v(" "),
+    _c("div", { staticClass: "col-md-12" }, [
+      _vm._m(0),
       _vm._v(" "),
-      _c("div", { staticClass: "col-md-12" }, [
-        _vm._m(0),
-        _vm._v(" "),
-        _vm.block
-          ? _c(
-              "div",
-              { staticClass: "tab-content", attrs: { id: "pills-tabContent" } },
-              [
-                _vm._m(1),
-                _vm._v(" "),
-                _c("div", {
-                  staticClass: "tab-pane fade show ",
-                  attrs: { id: "pills-html", role: "tabpanel" }
-                }),
-                _vm._v(" "),
-                _c("div", {
-                  staticClass: "tab-pane fade show ",
-                  attrs: { id: "pills-css", role: "tabpanel" }
-                }),
-                _vm._v(" "),
-                _c("div", {
-                  staticClass: "tab-pane fade show ",
-                  attrs: { id: "pills-js", role: "tabpanel" }
-                })
-              ]
-            )
-          : _vm._e()
-      ])
+      _vm.block
+        ? _c(
+            "div",
+            { staticClass: "tab-content", attrs: { id: "pills-tabContent" } },
+            [
+              _vm._m(1),
+              _vm._v(" "),
+              _c("div", {
+                staticClass: "tab-pane fade show ",
+                attrs: { id: "pills-html", role: "tabpanel" }
+              }),
+              _vm._v(" "),
+              _c("div", {
+                staticClass: "tab-pane fade show ",
+                attrs: { id: "pills-css", role: "tabpanel" }
+              }),
+              _vm._v(" "),
+              _c("div", {
+                staticClass: "tab-pane fade show ",
+                attrs: { id: "pills-js", role: "tabpanel" }
+              })
+            ]
+          )
+        : _vm._e()
     ])
   ])
 }
@@ -37376,79 +37404,83 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [
-    _c(
-      "div",
-      { staticClass: "row" },
-      _vm._l(_vm.blocks, function(block) {
-        return _vm.blocks
-          ? _c("div", { staticClass: "col-md-4" }, [
-              _c(
-                "div",
-                { staticClass: "card", staticStyle: { cursor: "pointer" } },
-                [
-                  _c("div", { staticClass: "card-image" }, [
-                    block.thumbnail
-                      ? _c("img", {
-                          staticStyle: { width: "100%" },
-                          attrs: { src: block.thumbnail }
-                        })
-                      : _c("img", {
-                          staticStyle: { width: "100%" },
-                          attrs: {
-                            src:
-                              "https://via.placeholder.com/500x300.png?text=Thumbnail+Missing"
-                          }
-                        })
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "card-title" }, [
-                    _vm._v(
-                      "\r\n                        " +
-                        _vm._s(block.name) +
-                        "\r\n                    "
-                    )
-                  ]),
-                  _vm._v(" "),
-                  block.description
-                    ? _c("div", { staticClass: "card-details" }, [
-                        _vm._v(
-                          "\r\n                        " +
-                            _vm._s(block.description) +
-                            "\r\n                    "
-                        )
-                      ])
-                    : _vm._e(),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    { staticClass: "card-link" },
-                    [
-                      _c(
-                        "router-link",
-                        {
-                          staticClass: "btn btn-block btn-primary",
-                          attrs: {
-                            to: {
-                              path:
-                                "/blocks/" +
-                                _vm.segments.category +
-                                "/" +
-                                block.name
+  return _c("div", { staticClass: "row" }, [
+    _c("div", { staticClass: "col-md-2" }, [_c("left")], 1),
+    _vm._v(" "),
+    _c("div", { staticClass: "col-md-10" }, [
+      _c(
+        "div",
+        { staticClass: "row" },
+        _vm._l(_vm.blocks, function(block) {
+          return _vm.blocks
+            ? _c("div", { staticClass: "col-md-4" }, [
+                _c(
+                  "div",
+                  { staticClass: "card", staticStyle: { cursor: "pointer" } },
+                  [
+                    _c("div", { staticClass: "card-image" }, [
+                      block.thumbnail
+                        ? _c("img", {
+                            staticStyle: { width: "100%" },
+                            attrs: { src: block.thumbnail }
+                          })
+                        : _c("img", {
+                            staticStyle: { width: "100%" },
+                            attrs: {
+                              src:
+                                "https://via.placeholder.com/500x300.png?text=Thumbnail+Missing"
                             }
-                          }
-                        },
-                        [_vm._v("View")]
+                          })
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "card-title" }, [
+                      _vm._v(
+                        "\r\n                            " +
+                          _vm._s(block.name) +
+                          "\r\n                        "
                       )
-                    ],
-                    1
-                  )
-                ]
-              )
-            ])
-          : _vm._e()
-      })
-    )
+                    ]),
+                    _vm._v(" "),
+                    block.description
+                      ? _c("div", { staticClass: "card-details" }, [
+                          _vm._v(
+                            "\r\n                            " +
+                              _vm._s(block.description) +
+                              "\r\n                        "
+                          )
+                        ])
+                      : _vm._e(),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      { staticClass: "card-link" },
+                      [
+                        _c(
+                          "router-link",
+                          {
+                            staticClass: "btn btn-block btn-primary",
+                            attrs: {
+                              to: {
+                                path:
+                                  "/blocks/" +
+                                  _vm.segments.category +
+                                  "/" +
+                                  block.name
+                              }
+                            }
+                          },
+                          [_vm._v("View")]
+                        )
+                      ],
+                      1
+                    )
+                  ]
+                )
+              ])
+            : _vm._e()
+        })
+      )
+    ])
   ])
 }
 var staticRenderFns = []

@@ -47,20 +47,9 @@
             </div>
         </div>
 
-        <div class="row">
+        <div>
 
-            <div class="col-md-2">
-
-                <left :searched="searched" @typed="getTypedInput"  ></left>
-
-            </div>
-            <div class="col-md-10">
-
-                <router-view @on-click="appOnClick"></router-view>
-
-
-            </div>
-
+            <router-view @on-click="appOnClick"></router-view>
 
         </div>
 
