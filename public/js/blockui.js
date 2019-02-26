@@ -519,6 +519,13 @@ module.exports = Component.exports
 
 /***/ }),
 
+/***/ "./Modules/Blockui/Resources/views/frontend/theme-v1/assets/sass/blockui.scss":
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ "./node_modules/axios/index.js":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -52858,7 +52865,8 @@ module.exports = function(module) {
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__("./Modules/Blockui/Resources/views/frontend/theme-v1/assets/js/blockui.js");
-module.exports = __webpack_require__("./resources/sass/app.scss");
+__webpack_require__("./resources/sass/app.scss");
+module.exports = __webpack_require__("./Modules/Blockui/Resources/views/frontend/theme-v1/assets/sass/blockui.scss");
 
 
 /***/ }),

@@ -12,7 +12,6 @@ const mix = require('laravel-mix');
  */
 
 mod_blockui= "Modules/Blockui/Resources/views";
-
 mix.sass('resources/sass/app.scss', 'public/css')
     .combine([
         mod_blockui+'/vendor/nprogress/nprogress.css',
@@ -23,4 +22,5 @@ mix.sass('resources/sass/app.scss', 'public/css')
         mod_blockui+'/vendor/alertify/alertify.js',
     ], 'public/js/blockui-vendor.js')
     .js(mod_blockui+'/frontend/theme-v1/assets/js/blockui.js', 'public/js')
+    .sass(mod_blockui+'/frontend/theme-v1/assets/sass/blockui.scss', 'public/css')
     .version();

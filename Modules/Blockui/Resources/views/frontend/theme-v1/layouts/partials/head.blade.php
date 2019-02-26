@@ -11,7 +11,9 @@
 <!-- Fonts -->
 <link rel="dns-prefetch" href="//fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
 
 <!-- Styles -->
 <link href="{{url("/")}}/public{{ mix('css/blockui-vendor.css') }}" rel="stylesheet">
 <link href="{{url("/")}}/public{{ mix('css/app.css') }}" rel="stylesheet">
+<link href="{{url("/")}}/public{{ mix('css/blockui.css') }}" rel="stylesheet">
