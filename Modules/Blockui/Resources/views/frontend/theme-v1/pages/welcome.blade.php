@@ -7,11 +7,9 @@
         iframe {
             width: 100%;
             height: 100%;
-            border: none;
-
-            background: #eee ;
-
-
+            background: #ccc ;
+            border: 1px solid #ccc;
+            padding: 2px;
             z-index: 1;
         }
     </style>
@@ -51,12 +49,12 @@
 
         <div class="row">
 
-            <div class="col-md-3">
+            <div class="col-md-2">
 
                 <left :searched="searched" @typed="getTypedInput"  ></left>
 
             </div>
-            <div class="col-md-9">
+            <div class="col-md-10">
 
                 <router-view @on-click="appOnClick"></router-view>
 

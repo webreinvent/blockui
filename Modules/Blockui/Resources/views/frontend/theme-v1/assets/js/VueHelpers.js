@@ -19,6 +19,13 @@ const VueHelpers = {
             NProgress.start();
         }
         axios.post(url, params)
+            .catch(function (error) {
+                if (error.response) {
+                    console.log(error.response.status);
+                } else {
+                    console.log('Error', error.message);
+                }
+            })
             .then(response => {
                 if(response.data.status == 'success')
                 {

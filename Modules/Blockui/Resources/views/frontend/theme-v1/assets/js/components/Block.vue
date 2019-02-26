@@ -124,7 +124,7 @@
             //---------------------------------------------------------------------
             getBlocksAfter: function (data) {
 
-                console.log('block', data);
+                //console.log('block', data);
                 this.block = data;
 
                 this.aceEditor('pills-html', 'html', this.block.html, 15);
@@ -133,7 +133,13 @@
 
                 var self = this;
 
-                $('iframe').attr('src', data.iframe).height('100%');
+                var window_height = $(window).height();
+                var iframe_height = window_height-250;
+
+                console.log('window_height', window_height);
+                console.log('iframe_height', iframe_height);
+
+                $('iframe').attr('src', data.iframe).height(iframe_height);
 
                 this.$nextTick(function () {
                     this.$helpers.stopNprogress();
@@ -142,6 +148,8 @@
 
             },
             //---------------------------------------------------------------------
+
+
 
             //---------------------------------------------------------------------
             aceEditor: function (element_id, mode, data, height) {
