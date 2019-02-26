@@ -22,6 +22,7 @@ Vue.use(VueHelpers);
 import Left from './components/Left';
 import Home from './components/Home';
 import Blocks from './components/Blocks';
+import Block from './components/Block';
 
 const router = new VueRouter({
     routes: [
@@ -32,6 +33,15 @@ const router = new VueRouter({
         {
             path: '/blocks/:category',
             component: Blocks,
+            props: (route) => ({
+                query: route.query,
+                segments: route.params
+            })
+
+        },
+        {
+            path: '/blocks/:category/:name',
+            component: Block,
             props: (route) => ({
                 query: route.query,
                 segments: route.params
