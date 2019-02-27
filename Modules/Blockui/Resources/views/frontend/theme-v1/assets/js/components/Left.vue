@@ -2,8 +2,8 @@
     <div>
 
 
-        <ul v-if="categories">
-            <li v-for="category in categories" class="nav-link">
+        <ul class="list-group-solid" v-if="categories">
+            <li v-for="category in categories" >
                 <router-link
                         v-bind:to="{ path: '/blocks/'+category}"
                         >{{category}}</router-link>

@@ -34,24 +34,24 @@
 @section('content')
 
 
-    <div class="container">
-
+    <div class="container-fluid">
         <div class="row">
             <div class="col-md-12">
 
-                <h1>BlockUI.io</h1>
-                <p>Independent, Reusable & BEM (Block Element Modifier) based UI Blocks/Components Snippets</p>
+                <h4 class="text-center">Independent, Reusable & BEM (Block Element Modifier) based UI Blocks/Components Snippets</h4>
 
                 <hr/>
 
             </div>
         </div>
+    </div>
 
-        <div>
+
+    <div class="container">
+
 
             <router-view @on-click="appOnClick"></router-view>
 
-        </div>
 
     </div>
 

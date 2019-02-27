@@ -37374,10 +37374,10 @@ var render = function() {
     _vm.categories
       ? _c(
           "ul",
+          { staticClass: "list-group-solid" },
           _vm._l(_vm.categories, function(category) {
             return _c(
               "li",
-              { staticClass: "nav-link" },
               [
                 _c(
                   "router-link",
