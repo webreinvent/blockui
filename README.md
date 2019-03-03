@@ -12,5 +12,5 @@ BEM stands for Block Element, Modifiers. The problem BEM is trying to solve is t
 
 Let’s say we want to build a card component. The block would be .card. Then any sections within card would be elements. So in this example, we have image, description, button. BEM naming convention connects block and element with two underscores ex. card__image. Finally, we have two different types of buttons, success and back. We call these modifiers and we connect them with our element with two dashes, for example .car__button — success.
 
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+![BEM Sample](https://raw.githubusercontent.com/webreinvent/blockui/master/public/img/bem-sample.png "Example of BEM")
 
