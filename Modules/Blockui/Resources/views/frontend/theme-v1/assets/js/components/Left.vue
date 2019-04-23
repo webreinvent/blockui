@@ -5,8 +5,10 @@
         <ul class="list-group-solid" v-if="categories">
             <li v-for="category in categories" >
                 <router-link
-                        v-bind:to="{ path: '/blocks/'+category}"
-                        >{{category}}</router-link>
+                        v-bind:to="{ path: '/blocks/'+category.name}"
+                        >{{category.name}}
+                    <span style="float: right;">({{category.blocks}})</span>
+                </router-link>
             </li>
         </ul>
 

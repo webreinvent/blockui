@@ -6,7 +6,7 @@
 
 <title>BlockUI: Independent & Reusable UI Blocks/Components Snippets</title>
 
-<base href="{{\URL::to('/')}}" />
+<base href="{{\URL::to('/')}}/app" />
 
 <!-- Fonts -->
 <link rel="dns-prefetch" href="//fonts.gstatic.com">

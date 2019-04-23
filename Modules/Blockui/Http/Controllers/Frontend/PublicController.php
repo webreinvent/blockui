@@ -33,10 +33,16 @@ class PublicController extends Controller
 
         $result = [];
 
+        $i = 0;
         foreach($list as $item)
         {
+
+            $blocks = \Storage::directories($item);
+
             $item = str_replace("public/blocks/", "", $item);
-            $result[] = $item;
+            $result[$i]['name'] = $item;
+            $result[$i]['blocks'] = count($blocks);
+            $i++;
         }
 
         $response['status'] = 'success';
