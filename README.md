@@ -18,4 +18,4 @@ Let’s say we want to build a card component. The block would be .card. Then an
 
 #### Tools:
 
-- Deliver Automation:  https://buddy.works/
+- Delivery Automation:  https://buddy.works/
