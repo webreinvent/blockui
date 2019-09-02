@@ -1,0 +1,17 @@
+/.idea/
+/.git/
+/node_modules
+/public/hot
+/public/storage
+/public/vendor
+/storage/*.key
+/vendor
+.env
+.phpunit.result.cache
+/Homestead.json
+*.lock
+/Homestead.yaml
+/npm-debug.log
+/yarn-error.log
+/package-lock.json
+/*.zip
